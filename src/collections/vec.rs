@@ -1,4 +1,5 @@
 use core::{
+    alloc::{GlobalAlloc, Layout},
     mem,
     marker::PhantomData,
     hint::cold_path,
@@ -7,13 +8,14 @@ use core::{
 };
 
 use std::{
-    alloc::{self, Layout},
+    alloc::{self, System, handle_alloc_error}, usize
 };
 
-pub struct Vec<T> {
+pub struct Vec<T, A: GlobalAlloc = System> {
     ptr: NonNull<T>,
     len: usize,
     cap: usize,
+    alloc: A,
     _marker: PhantomData<T>,
 }
 
@@ -28,8 +30,13 @@ const fn dangling<T>() -> NonNull<T> {
     unsafe { NonNull::new_unchecked(mem::align_of::<T>() as *mut T)}
 }
 
-impl<T> Vec<T> {
-    pub fn new() -> Self {
+#[inline(always)]
+const fn default_cap<T>() -> usize {
+    if !is_zst::<T>() { 0 } else { usize::MAX }
+}
+
+impl<T, A: GlobalAlloc> Vec<T, A> {
+    pub fn new_in(alloc: A) -> Self {
         Self {
             ptr: dangling(),
             len: 0,
@@ -39,11 +46,50 @@ impl<T> Vec<T> {
                 cold_path();
                 usize::MAX
             },
+            alloc,
+            _marker: PhantomData
+        }
+    }
+}
+
+impl<T> Vec<T, System> {
+    pub fn new() -> Self {
+        Self {
+            ptr: dangling(),
+            len: 0,
+            cap: default_cap::<T>(),
+            alloc: System,
             _marker: PhantomData
         }
     }
 
-    fn grow_to(new_len: usize) -> usize {
-        
+    fn grow_to(&mut self, new_len: usize) {
+        if is_zst::<T>() {
+            cold_path();
+            return
+        }
+
+        let new_layout = Layout::array::<T>(new_len).expect("layout overflow");
+
+        // Allocate a new contiguous block of memory on the heap
+        let new_ptr: *mut u8 = if self.len > 0 {
+            let curr_layout = Layout::array::<T>(self.len).expect("layout overflow");
+            unsafe { alloc::realloc(self.ptr.as_ptr() as *mut u8, curr_layout, new_len) }
+        } else {
+            cold_path();
+            unsafe { alloc::alloc(new_layout) }
+        };
+
+        // Check if the new pointer is non-null
+        if new_ptr.is_null() {
+            cold_path();
+            handle_alloc_error(new_layout);
+        }
+
+        self.ptr = unsafe { NonNull::new_unchecked(new_ptr as *mut T) };
+        self.cap = new_layout.size();
+
     }
+
+    
 } 
