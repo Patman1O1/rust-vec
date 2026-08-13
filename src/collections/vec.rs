@@ -53,7 +53,7 @@ impl<T, A: GlobalAlloc> Vec<T, A> {
 }
 
 impl<T> Vec<T, System> {
-    pub fn new() -> Self {
+    pub const fn new() -> Self {
         Self {
             ptr: dangling(),
             len: 0,
