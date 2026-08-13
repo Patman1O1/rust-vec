@@ -63,7 +63,7 @@ impl<T> Vec<T, System> {
         }
     }
 
-    fn grow_to(&mut self, new_len: usize) {
+    fn realloc(&mut self, new_len: usize) {
         if is_zst::<T>() {
             cold_path();
             return
@@ -91,5 +91,5 @@ impl<T> Vec<T, System> {
 
     }
 
-    
+
 } 
