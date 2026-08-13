@@ -64,11 +64,6 @@ impl<T> Vec<T, System> {
     }
 
     fn realloc(&mut self, new_len: usize) {
-        if is_zst::<T>() {
-            cold_path();
-            return
-        }
-
         let new_layout = Layout::array::<T>(new_len).expect("layout overflow");
 
         // Allocate a new contiguous block of memory on the heap
@@ -90,6 +85,5 @@ impl<T> Vec<T, System> {
         self.cap = new_layout.size();
 
     }
-
 
 } 
