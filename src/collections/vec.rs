@@ -73,9 +73,11 @@ impl<T> Vec<T, System> {
         };
 
         vec.realloc(capacity);
-        
+
         vec
     }
+
+
 
     fn realloc(&mut self, new_len: usize) {
         let new_layout = Layout::array::<T>(new_len).expect("layout overflow");
@@ -101,3 +103,14 @@ impl<T> Vec<T, System> {
     }
 
 } 
+
+impl<T> Vec<T> {
+    #[inline(always)]
+    pub const fn as_ptr(&self) -> *const T { self.ptr.as_ptr() }
+
+    #[inline(always)]
+    pub const fn capacity(&self) -> usize { self.cap }
+
+    #[inline(always)]
+    pub const fn len(&self) -> usize { self.len }
+}
