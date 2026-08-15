@@ -34,14 +34,7 @@ mod tests {
         }
 
         mod new_in {
-            // Core Aliases
-            use core::marker::PhantomData;
-
-            // Standard Library Aliases
-            use std::alloc::System;
-
-            // Local Aliases
-            use crate::collections::vec::Vec as MyVec;
+            use super::*;
 
             #[test]
             fn is_non_null() {
