@@ -25,19 +25,6 @@ use std::{
     }
 };
 
-#[inline(always)]
-const fn is_zst<T>() -> bool { size_of::<T>() == 0 }
-
-#[inline(always)]
-const fn dangling<T>() -> NonNull<T> {
-    unsafe { NonNull::new_unchecked(align_of::<T>() as *mut T)}
-}
-
-#[inline(always)]
-const fn default_cap<T>() -> usize {
-    if !is_zst::<T>() { 0 } else { usize::MAX }
-}
-
 pub struct Vec<T, A: GlobalAlloc = System> {
     ptr: NonNull<T>,
     len: usize,
@@ -127,3 +114,17 @@ impl<T> Vec<T> {
     #[inline(always)]
     pub const fn len(&self) -> usize { self.len }
 }
+
+#[inline(always)]
+const fn is_zst<T>() -> bool { size_of::<T>() == 0 }
+
+#[inline(always)]
+const fn dangling<T>() -> NonNull<T> {
+    unsafe { NonNull::new_unchecked(align_of::<T>() as *mut T)}
+}
+
+#[inline(always)]
+const fn default_cap<T>() -> usize {
+    if !is_zst::<T>() { 0 } else { usize::MAX }
+}
+
