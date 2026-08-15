@@ -91,6 +91,15 @@ impl<T, A: GlobalAlloc> Vec<T, A> {
         self.ptr = unsafe { NonNull::new_unchecked(raw_ptr as *mut T) };
         self.cap = new_size;
     }
+
+    fn dealloc(&mut self) {
+        unsafe {
+            self.alloc.dealloc(
+                self.ptr.as_ptr() as *mut u8,
+                Layout::array::<T>(self.cap).expect("layout overflow")
+            );
+        };
+    }
 }
 
 impl<T> Vec<T, System> {
