@@ -16,14 +16,11 @@ use core::{
 
 use std::{
     alloc::{
-        handle_alloc_error,
-        self,
-        System,
-    },
-    collections::{
-        TryReserveError
-    }
+        self, System, handle_alloc_error, realloc,
+    }, collections::TryReserveError
 };
+
+static INITIAL_CAPACITY: usize = 4;
 
 pub struct Vec<T, A: GlobalAlloc = System> {
     ptr: NonNull<T>,
@@ -51,6 +48,49 @@ impl<T, A: GlobalAlloc> Vec<T, A> {
             _marker: PhantomData
         }
     }
+
+    fn alloc(&mut self, size: usize) {
+        let layout = Layout::array::<T>(size).expect("layout overflow");
+
+        // SAFETY: `size` is guarenteed to be non-zero because self.alloc() 
+        // is private and will only ever be called with a non-zero argument
+        let raw_ptr: *mut u8 = unsafe {
+            self.alloc.alloc(layout)
+        };
+
+        if raw_ptr.is_null() {
+            cold_path();
+            handle_alloc_error(layout);
+        }
+
+        // SAFETY: `raw_ptr` is non-null
+        self.ptr = unsafe { NonNull::new_unchecked(raw_ptr as *mut T) };
+        self.cap = size;
+    }
+
+    fn realloc(&mut self, new_size: usize) {
+        let curr_layout = Layout::array::<T>(self.cap)
+            .expect("layout overflow");
+        
+        // SAFETY: `new_size` is guarenteed to be non-zero because 
+        // self.realloc() is private and will only ever be called with a
+        // non-zero argument
+        let raw_ptr: *mut u8 = unsafe {
+            self.alloc.realloc(
+                self.ptr.as_ptr() as *mut u8,
+                curr_layout,
+                new_size
+            )
+        };
+
+        if raw_ptr.is_null() {
+            handle_alloc_error(curr_layout);
+        }
+
+        // SAFETY: `raw_ptr` is non-null
+        self.ptr = unsafe { NonNull::new_unchecked(raw_ptr as *mut T) };
+        self.cap = new_size;
+    }
 }
 
 impl<T> Vec<T, System> {
@@ -76,31 +116,7 @@ impl<T> Vec<T, System> {
         vec.realloc(capacity);
 
         vec
-    }
-
-    fn realloc(&mut self, new_len: usize) {
-        let new_layout = Layout::array::<T>(new_len).expect("layout overflow");
-
-        // Allocate a new contiguous block of memory on the heap
-        let new_ptr: *mut u8 = if self.len > 0 {
-            let curr_layout = Layout::array::<T>(self.len).expect("layout overflow");
-            unsafe { alloc::realloc(self.ptr.as_ptr() as *mut u8, curr_layout, new_len) }
-        } else {
-            cold_path();
-            unsafe { alloc::alloc(new_layout) }
-        };
-
-        // Check if the new pointer is non-null
-        if new_ptr.is_null() {
-            cold_path();
-            handle_alloc_error(new_layout);
-        }
-
-        self.ptr = unsafe { NonNull::new_unchecked(new_ptr as *mut T) };
-        self.cap = new_layout.size();
-
-    }
-
+    } 
 } 
 
 impl<T> Vec<T> {
