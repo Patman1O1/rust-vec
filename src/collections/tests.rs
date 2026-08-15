@@ -1,12 +1,19 @@
 #[cfg(test)]
 mod tests {
+    // Core Aliases
+    use core::marker::PhantomData;
+
+    // Local Aliases
+    use crate::collections::vec::Vec;
+
     mod functions {
+        // Parent Aliases
+        use super::*;
+
         mod new {
-            // Core Aliases
-            use core::marker::PhantomData;
-            
-            // Local Aliases
-            use crate::collections::vec::Vec as MyVec;
+            // Parent Aliases
+            use super::*;
+
 
             #[test]
             fn is_non_null() {
