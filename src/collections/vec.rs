@@ -25,17 +25,6 @@ use std::{
     }
 };
 
-pub struct Vec<T, A: GlobalAlloc = System> {
-    ptr: NonNull<T>,
-    len: usize,
-    cap: usize,
-    alloc: A,
-    _marker: PhantomData<T>,
-}
-
-unsafe impl<T: Send> Send for Vec<T> {}
-unsafe impl<T: Sync> Sync for Vec<T> {}
-
 #[inline(always)]
 const fn is_zst<T>() -> bool { size_of::<T>() == 0 }
 
@@ -49,7 +38,16 @@ const fn default_cap<T>() -> usize {
     if !is_zst::<T>() { 0 } else { usize::MAX }
 }
 
-fn realloc_
+pub struct Vec<T, A: GlobalAlloc = System> {
+    ptr: NonNull<T>,
+    len: usize,
+    cap: usize,
+    alloc: A,
+    _marker: PhantomData<T>,
+}
+
+unsafe impl<T: Send> Send for Vec<T> {}
+unsafe impl<T: Sync> Sync for Vec<T> {}
 
 impl<T, A: GlobalAlloc> Vec<T, A> {
     pub fn new_in(alloc: A) -> Self {
@@ -119,10 +117,7 @@ impl<T> Vec<T, System> {
 } 
 
 impl<T> Vec<T> {
-    pub fn try_with_capacity() -> Result<Vec<T>, TryReserveError> {
-        
-    }
-
+    
     #[inline(always)]
     pub const fn as_ptr(&self) -> *const T { self.ptr.as_ptr() }
 
