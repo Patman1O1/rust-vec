@@ -14,7 +14,6 @@ mod tests {
             // Parent Aliases
             use super::*;
 
-
             #[test]
             fn is_non_null() {
                 let vec = Vec::<i32>::new();
