@@ -8,7 +8,7 @@ use core::{
 };
 
 use std::{
-    alloc::{self, System, handle_alloc_error}, usize
+    alloc::{self, System, handle_alloc_error}
 };
 
 pub struct Vec<T, A: GlobalAlloc = System> {
