@@ -38,19 +38,19 @@ mod tests {
 
             #[test]
             fn is_non_null() {
-                let vec = MyVec::<i32, System>::new_in(System);
+                let vec = Vec::<i32, System>::new_in(System);
                 assert!(!vec.as_ptr().is_null());
             }
 
             #[test]
             fn cap_zero_size_type() {
-                let vec = MyVec::<PhantomData<i32>, System>::new_in(System);
+                let vec = Vec::<PhantomData<i32>, System>::new_in(System);
                 assert_eq!(usize::MAX, vec.capacity());
             }
 
             #[test]
             fn cap_non_zero_size_type() {
-                let vec = MyVec::<i32, System>::new_in(System);
+                let vec = Vec::<i32, System>::new_in(System);
                 assert_eq!(0, vec.capacity());
             }
         }
