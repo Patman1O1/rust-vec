@@ -11,10 +11,18 @@ use core::{
     hint::cold_path,
     ops::{Deref, DerefMut},
     ptr::{self, NonNull},
+    result::{Result}
 };
 
 use std::{
-    alloc::{self, System, handle_alloc_error}
+    alloc::{
+        handle_alloc_error,
+        self,
+        System,
+    },
+    collections::{
+        TryReserveError
+    }
 };
 
 pub struct Vec<T, A: GlobalAlloc = System> {
@@ -40,6 +48,8 @@ const fn dangling<T>() -> NonNull<T> {
 const fn default_cap<T>() -> usize {
     if !is_zst::<T>() { 0 } else { usize::MAX }
 }
+
+fn realloc_
 
 impl<T, A: GlobalAlloc> Vec<T, A> {
     pub fn new_in(alloc: A) -> Self {
@@ -109,6 +119,10 @@ impl<T> Vec<T, System> {
 } 
 
 impl<T> Vec<T> {
+    pub fn try_with_capacity() -> Result<Vec<T>, TryReserveError> {
+        
+    }
+
     #[inline(always)]
     pub const fn as_ptr(&self) -> *const T { self.ptr.as_ptr() }
 
