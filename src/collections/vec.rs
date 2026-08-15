@@ -1,6 +1,12 @@
 use core::{
-    alloc::{GlobalAlloc, Layout},
-    mem,
+    alloc::{
+        GlobalAlloc,
+        Layout
+    },
+    mem::{
+        size_of,
+        align_of
+    },
     marker::PhantomData,
     hint::cold_path,
     ops::{Deref, DerefMut},
@@ -23,11 +29,11 @@ unsafe impl<T: Send> Send for Vec<T> {}
 unsafe impl<T: Sync> Sync for Vec<T> {}
 
 #[inline(always)]
-const fn is_zst<T>() -> bool { mem::size_of::<T>() == 0 }
+const fn is_zst<T>() -> bool { size_of::<T>() == 0 }
 
 #[inline(always)]
 const fn dangling<T>() -> NonNull<T> {
-    unsafe { NonNull::new_unchecked(mem::align_of::<T>() as *mut T)}
+    unsafe { NonNull::new_unchecked(align_of::<T>() as *mut T)}
 }
 
 #[inline(always)]
