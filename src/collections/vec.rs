@@ -83,8 +83,6 @@ impl<T> Vec<T, System> {
         vec
     }
 
-
-
     fn realloc(&mut self, new_len: usize) {
         let new_layout = Layout::array::<T>(new_len).expect("layout overflow");
 
