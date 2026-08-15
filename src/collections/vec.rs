@@ -93,6 +93,7 @@ impl<T, A: GlobalAlloc> Vec<T, A> {
     }
 
     fn dealloc(&mut self) {
+        // SAFETY: dealloc() is private and self.ptr is always non-null
         unsafe {
             self.alloc.dealloc(
                 self.ptr.as_ptr() as *mut u8,
