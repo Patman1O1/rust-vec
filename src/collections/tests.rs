@@ -279,7 +279,7 @@ mod tests {
             use super::*;
         }
 
-        // ── `Vec::swap_remove()` Tests ─────────────────────────────────────
+        // ── `Vec::swap_remove()` Tests ──────────────────────────────────────
         // TODO
         mod swap_remove {
             use super::*;
@@ -300,6 +300,803 @@ mod tests {
         // ── `Vec::try_reserve_exact()` Tests ────────────────────────────────
         // TODO
         mod try_reserve_exact {
+            use super::*;
+        }
+    }
+
+    // ── `Deref` Method Tests ────────────────────────────────────────────────
+    mod dref_methods {
+        use super::*;
+
+        // ── `<[T]>::align_to()` Tests ───────────────────────────────────────
+        // TODO
+        mod align_to {
+            use super::*;
+        }
+
+        // ── `<[T]>::align_to_mut()` Tests ───────────────────────────────────
+        // TODO
+        mod align_to_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::array_windows()` Tests ──────────────────────────────────
+        // TODO
+        mod array_windows {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_array()` Tests ───────────────────────────────────────
+        // TODO
+        mod as_array {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_chunks()` Tests ──────────────────────────────────────
+        // TODO
+        mod as_chunks {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_chunks_mut()` Tests ──────────────────────────────────
+        // TODO
+        mod as_chunks_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_chunks_unchecked()` Tests ────────────────────────────
+        // TODO
+        mod as_chunks_unchecked {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_chunks_unchecked_mut()` Tests ────────────────────────
+        // TODO
+        mod as_chunks_unchecked_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_mut_array()` Tests ───────────────────────────────────
+        // TODO
+        mod as_mut_array {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_mut_ptr()` Tests ─────────────────────────────────────
+        // TODO
+        mod as_mut_ptr {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_mut_ptr_range()` Tests ───────────────────────────────
+        // TODO
+        mod as_mut_ptr_range {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_mut_slice()` Tests ───────────────────────────────────
+        // TODO
+        mod as_mut_slice {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_ptr()` Tests ─────────────────────────────────────────
+        // TODO
+        mod as_ptr {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_ptr_range()` Tests ───────────────────────────────────
+        // TODO
+        mod as_ptr_range {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_rchunks()` Tests ─────────────────────────────────────
+        // TODO
+        mod as_rchunks {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_rchunks_mut()` Tests ─────────────────────────────────
+        // TODO
+        mod as_rchunks_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_simd()` Tests ────────────────────────────────────────
+        // TODO
+        mod as_simd {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_simd_mut()` Tests ────────────────────────────────────
+        // TODO
+        mod as_simd_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::as_slice()` Tests ───────────────────────────────────────
+        // TODO
+        mod as_slice {
+            use super::*;
+        }
+
+        // ── `<[T]>::binary_search()` Tests ──────────────────────────────────
+        // TODO
+        mod binary_search {
+            use super::*;
+        }
+
+        // ── `<[T]>::binary_search_by()` Tests ───────────────────────────────
+        // TODO
+        mod binary_search_by {
+            use super::*;
+        }
+
+        // ── `<[T]>::binary_search_by_key()` Tests ───────────────────────────
+        // TODO
+        mod binary_search_by_key {
+            use super::*;
+        }
+
+        // ── `<[T]>::chunk_by()` Tests ───────────────────────────────────────
+        // TODO
+        mod chunk_by {
+            use super::*;
+        }
+
+        // ── `<[T]>::chunk_by_mut()` Tests ───────────────────────────────────
+        // TODO
+        mod chunk_by_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::chunks()` Tests ─────────────────────────────────────────
+        // TODO
+        mod chunks {
+            use super::*;
+        }
+
+        // ── `<[T]>::chunks_exact()` Tests ───────────────────────────────────
+        // TODO
+        mod chunks_exact {
+            use super::*;
+        }
+
+        // ── `<[T]>::chunks_exact_mut()` Tests ───────────────────────────────
+        // TODO
+        mod chunks_exact_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::chunks_mut()` Tests ─────────────────────────────────────
+        // TODO
+        mod chunks_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::clone_from_slice()` Tests ───────────────────────────────
+        // TODO
+        mod clone_from_slice {
+            use super::*;
+        }
+
+        // ── `<[T]>::concat()` Tests ─────────────────────────────────────────
+        // TODO
+        mod concat {
+            use super::*;
+        }
+
+        // ── `<[T]>::connect()` Tests ────────────────────────────────────────
+        // TODO
+        mod connect {
+            use super::*;
+        }
+
+        // ── `<[T]>::contains()` Tests ───────────────────────────────────────
+        // TODO
+        mod contains {
+            use super::*;
+        }
+
+        // ── `<[T]>::copy_from_slice()` Tests ────────────────────────────────
+        // TODO
+        mod copy_from_slice {
+            use super::*;
+        }
+
+        // ── `<[T]>::copy_within()` Tests ────────────────────────────────────
+        // TODO
+        mod copy_within {
+            use super::*;
+        }
+
+        // ── `<[T]>::element_offset()` Tests ─────────────────────────────────
+        // TODO
+        mod element_offset {
+            use super::*;
+        }
+
+        // ── `<[T]>::ends_with()` Tests ──────────────────────────────────────
+        // TODO
+        mod ends_with {
+            use super::*;
+        }
+
+        // ── `<[T]>::fill()` Tests ───────────────────────────────────────────
+        // TODO
+        mod fill {
+            use super::*;
+        }
+
+        // ── `<[T]>::fill_with()` Tests ──────────────────────────────────────
+        // TODO
+        mod fill_with {
+            use super::*;
+        }
+
+        // ── `<[T]>::first()` Tests ──────────────────────────────────────────
+        // TODO
+        mod first {
+            use super::*;
+        }
+
+        // ── `<[T]>::first_chunk()` Tests ────────────────────────────────────
+        // TODO
+        mod first_chunk {
+            use super::*;
+        }
+
+        // ── `<[T]>::first_chunk_mut()` Tests ────────────────────────────────
+        // TODO
+        mod first_chunk_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::first_mut()` Tests ──────────────────────────────────────
+        // TODO
+        mod first_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::get()` Tests ────────────────────────────────────────────
+        // TODO
+        mod get {
+            use super::*;
+        }
+
+        // ── `<[T]>::get_disjoint_mut()` Tests ───────────────────────────────
+        // TODO
+        mod get_disjoint_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::get_disjoint_unchecked_mut()` Tests ─────────────────────
+        // TODO
+        mod get_disjoint_unchecked_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::get_mut()` Tests ────────────────────────────────────────
+        // TODO
+        mod get_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::get_unchecked()` Tests ──────────────────────────────────
+        // TODO
+        mod get_unchecked {
+            use super::*;
+        }
+
+        // ── `<[T]>::get_unchecked_mut()` Tests ──────────────────────────────
+        // TODO
+        mod get_unchecked_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::is_empty()` Tests ───────────────────────────────────────
+        // TODO
+        mod is_empty {
+            use super::*;
+        }
+
+        // ── `<[T]>::is_sorted()` Tests ──────────────────────────────────────
+        // TODO
+        mod is_sorted {
+            use super::*;
+        }
+
+        // ── `<[T]>::is_sorted_by()` Tests ───────────────────────────────────
+        // TODO
+        mod is_sorted_by {
+            use super::*;
+        }
+
+        // ── `<[T]>::is_sorted_by_key()` Tests ───────────────────────────────
+        // TODO
+        mod is_sorted_by_key {
+            use super::*;
+        }
+
+        // ── `<[T]>::iter()` Tests ───────────────────────────────────────────
+        // TODO
+        mod iter {
+            use super::*;
+        }
+
+        // ── `<[T]>::iter_mut()` Tests ───────────────────────────────────────
+        // TODO
+        mod iter_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::join()` Tests ───────────────────────────────────────────
+        // TODO
+        mod join {
+            use super::*;
+        }
+
+        // ── `<[T]>::last()` Tests ───────────────────────────────────────────
+        // TODO
+        mod last {
+            use super::*;
+        }
+
+        // ── `<[T]>::last_chunk()` Tests ─────────────────────────────────────
+        // TODO
+        mod last_chunk {
+            use super::*;
+        }
+
+        // ── `<[T]>::last_chunk_mut()` Tests ─────────────────────────────────
+        // TODO
+        mod last_chunk_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::last_mut()` Tests ───────────────────────────────────────
+        // TODO
+        mod last_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::len()` Tests ────────────────────────────────────────────
+        // TODO
+        mod len {
+            use super::*;
+        }
+
+        // ── `<[T]>::partial_sort_unstable()` Tests ──────────────────────────
+        // TODO
+        mod partial_sort_unstable {
+            use super::*;
+        }
+
+        // ── `<[T]>::partial_sort_unstable_by()` Tests ───────────────────────
+        // TODO
+        mod partial_sort_unstable_by {
+            use super::*;
+        }
+
+        // ── `<[T]>::partial_sort_unstable_by_key()` Tests ───────────────────
+        // TODO
+        mod partial_sort_unstable_by_key {
+            use super::*;
+        }
+
+        // ── `<[T]>::partition_dedup()` Tests ────────────────────────────────
+        // TODO
+        mod partition_dedup {
+            use super::*;
+        }
+
+        // ── `<[T]>::partition_dedup_by()` Tests ─────────────────────────────
+        // TODO
+        mod partition_dedup_by {
+            use super::*;
+        }
+
+        // ── `<[T]>::partition_dedup_by_key()` Tests ─────────────────────────
+        // TODO
+        mod partition_dedup_by_key {
+            use super::*;
+        }
+
+        // ── `<[T]>::partition_point()` Tests ────────────────────────────────
+        // TODO
+        mod partition_point {
+            use super::*;
+        }
+
+        // ── `<[T]>::rchunks()` Tests ────────────────────────────────────────
+        // TODO
+        mod rchunks {
+            use super::*;
+        }
+
+        // ── `<[T]>::rchunks_exact()` Tests ──────────────────────────────────
+        // TODO
+        mod rchunks_exact {
+            use super::*;
+        }
+
+        // ── `<[T]>::rchunks_exact_mut()` Tests ──────────────────────────────
+        // TODO
+        mod rchunks_exact_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::rchunks_mut()` Tests ────────────────────────────────────
+        // TODO
+        mod rchunks_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::repeat()` Tests ─────────────────────────────────────────
+        // TODO
+        mod repeat {
+            use super::*;
+        }
+
+        // ── `<[T]>::reverse()` Tests ────────────────────────────────────────
+        // TODO
+        mod reverse {
+            use super::*;
+        }
+
+        // ── `<[T]>::rotate_left()` Tests ────────────────────────────────────
+        // TODO
+        mod rotate_left {
+            use super::*;
+        }
+
+        // ── `<[T]>::rotate_right()` Tests ───────────────────────────────────
+        // TODO
+        mod rotate_right {
+            use super::*;
+        }
+
+        // ── `<[T]>::rsplit()` Tests ─────────────────────────────────────────
+        // TODO
+        mod rsplit {
+            use super::*;
+        }
+
+        // ── `<[T]>::rsplit_mut()` Tests ─────────────────────────────────────
+        // TODO
+        mod rsplit_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::rsplit_once()` Tests ────────────────────────────────────
+        // TODO
+        mod rsplit_once {
+            use super::*;
+        }
+
+        // ── `<[T]>::rsplitn()` Tests ────────────────────────────────────────
+        // TODO
+        mod rsplitn {
+            use super::*;
+        }
+
+        // ── `<[T]>::rsplitn_mut()` Tests ────────────────────────────────────
+        // TODO
+        mod rsplitn_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::select_nth_unstable()` Tests ───────────────────────────
+        // TODO
+        mod select_nth_unstable {
+            use super::*;
+        }
+
+        // ── `<[T]>::select_nth_unstable_by()` Tests ────────────────────────
+        // TODO
+        mod select_nth_unstable_by {
+            use super::*;
+        }
+
+        // ── `<[T]>::select_nth_unstable_by_key()` Tests ────────────────────
+        // TODO
+        mod select_nth_unstable_by_key {
+            use super::*;
+        }
+
+        // ── `<[T]>::shift_left()` Tests ─────────────────────────────────────
+        // TODO
+        mod shift_left {
+            use super::*;
+        }
+
+        // ── `<[T]>::shift_right()` Tests ────────────────────────────────────
+        // TODO
+        mod shift_right {
+            use super::*;
+        }
+
+        // ── `<[T]>::sort()` Tests ───────────────────────────────────────────
+        // TODO
+        mod sort {
+            use super::*;
+        }
+
+        // ── `<[T]>::sort_by()` Tests ────────────────────────────────────────
+        // TODO
+        mod sort_by {
+            use super::*;
+        }
+
+        // ── `<[T]>::sort_by_cached_key()` Tests ─────────────────────────────
+        // TODO
+        mod sort_by_cached_key {
+            use super::*;
+        }
+
+        // ── `<[T]>::sort_by_key()` Tests ────────────────────────────────────
+        // TODO
+        mod sort_by_key {
+            use super::*;
+        }
+
+        // ── `<[T]>::sort_unstable()` Tests ──────────────────────────────────
+        // TODO
+        mod sort_unstable {
+            use super::*;
+        }
+
+        // ── `<[T]>::sort_unstable_by()` Tests ───────────────────────────────
+        // TODO
+        mod sort_unstable_by {
+            use super::*;
+        }
+
+        // ── `<[T]>::sort_unstable_by_key()` Tests ───────────────────────────
+        // TODO
+        mod sort_unstable_by_key {
+            use super::*;
+        }
+
+        // ── `<[T]>::split()` Tests ──────────────────────────────────────────
+        // TODO
+        mod split {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_at()` Tests ───────────────────────────────────────
+        // TODO
+        mod split_at {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_at_checked()` Tests ───────────────────────────────
+        // TODO
+        mod split_at_checked {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_at_mut()` Tests ───────────────────────────────────
+        // TODO
+        mod split_at_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_at_mut_checked()` Tests ───────────────────────────
+        // TODO
+        mod split_at_mut_checked {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_at_mut_unchecked()` Tests ─────────────────────────
+        // TODO
+        mod split_at_mut_unchecked {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_at_unchecked()` Tests ─────────────────────────────
+        // TODO
+        mod split_at_unchecked {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_first()` Tests ────────────────────────────────────
+        // TODO
+        mod split_first {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_first_chunk()` Tests ──────────────────────────────
+        // TODO
+        mod split_first_chunk {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_first_chunk_mut()` Tests ──────────────────────────
+        // TODO
+        mod split_first_chunk_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_first_mut()` Tests ────────────────────────────────
+        // TODO
+        mod split_first_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_inclusive()` Tests ────────────────────────────────
+        // TODO
+        mod split_inclusive {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_inclusive_mut()` Tests ────────────────────────────
+        // TODO
+        mod split_inclusive_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_last()` Tests ─────────────────────────────────────
+        // TODO
+        mod split_last {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_last_chunk()` Tests ───────────────────────────────
+        // TODO
+        mod split_last_chunk {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_last_chunk_mut()` Tests ───────────────────────────
+        // TODO
+        mod split_last_chunk_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_last_mut()` Tests ─────────────────────────────────
+        // TODO
+        mod split_last_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_mut()` Tests ──────────────────────────────────────
+        // TODO
+        mod split_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_off()` Tests ──────────────────────────────────────
+        // TODO
+        mod split_off {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_off_first()` Tests ────────────────────────────────
+        // TODO
+        mod split_off_first {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_off_first_mut()` Tests ────────────────────────────
+        // TODO
+        mod split_off_first_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_off_last()` Tests ─────────────────────────────────
+        // TODO
+        mod split_off_last {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_off_last_mut()` Tests ─────────────────────────────
+        // TODO
+        mod split_off_last_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_off_mut()` Tests ──────────────────────────────────
+        // TODO
+        mod split_off_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::split_once()` Tests ─────────────────────────────────────
+        // TODO
+        mod split_once {
+            use super::*;
+        }
+
+        // ── `<[T]>::splitn()` Tests ─────────────────────────────────────────
+        // TODO
+        mod splitn {
+            use super::*;
+        }
+
+        // ── `<[T]>::splitn_mut()` Tests ─────────────────────────────────────
+        // TODO
+        mod splitn_mut {
+            use super::*;
+        }
+
+        // ── `<[T]>::starts_with()` Tests ────────────────────────────────────
+        // TODO
+        mod starts_with {
+            use super::*;
+        }
+
+        // ── `<[T]>::strip_circumfix()` Tests ────────────────────────────────
+        // TODO
+        mod strip_circumfix {
+            use super::*;
+        }
+
+        // ── `<[T]>::strip_prefix()` Tests ───────────────────────────────────
+        // TODO
+        mod strip_prefix {
+            use super::*;
+        }
+
+        // ── `<[T]>::strip_suffix()` Tests ───────────────────────────────────
+        // TODO
+        mod strip_suffix {
+            use super::*;
+        }
+
+        // ── `<[T]>::subslice_range()` Tests ─────────────────────────────────
+        // TODO
+        mod subslice_range {
+            use super::*;
+        }
+
+        // ── `<[T]>::swap()` Tests ───────────────────────────────────────────
+        // TODO
+        mod swap {
+            use super::*;
+        }
+
+        // ── `<[T]>::swap_unchecked()` Tests ─────────────────────────────────
+        // TODO
+        mod swap_unchecked {
+            use super::*;
+        }
+
+        // ── `<[T]>::swap_with_slice()` Tests ────────────────────────────────
+        // TODO
+        mod swap_with_slice {
+            use super::*;
+        }
+
+        // ── `<[T]>::to_vec()` Tests ─────────────────────────────────────────
+        // TODO
+        mod to_vec {
+            use super::*;
+        }
+
+        // ── `<[T]>::to_vec_in()` Tests ──────────────────────────────────────
+        // TODO
+        mod to_vec_in {
+            use super::*;
+        }
+
+        // ── `<[T]>::trim_prefix()` Tests ────────────────────────────────────
+        // TODO
+        mod trim_prefix {
+            use super::*;
+        }
+
+        // ── `<[T]>::trim_suffix()` Tests ────────────────────────────────────
+        // TODO
+        mod trim_suffix {
+            use super::*;
+        }
+
+        // ── `<[T]>::windows()` Tests ────────────────────────────────────────
+        // TODO
+        mod windows {
             use super::*;
         }
     }
