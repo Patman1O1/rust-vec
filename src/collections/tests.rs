@@ -1100,4 +1100,451 @@ mod tests {
             use super::*;
         }
     }
+
+    // ── Trait Implementations ───────────────────────────────────────────────
+    mod trait_implementations {
+        use super::*;
+
+        // ── `AsMut<Vec<T, A>>` Tests ────────────────────────────────────────
+        // TODO
+        mod as_mut_vec {
+            use super::*;
+        }
+
+        // ── `AsMut<[T]>` Tests ──────────────────────────────────────────────
+        // TODO
+        mod as_mut_slice {
+            use super::*;
+        }
+
+        // ── `AsRef<Vec<T, A>>` Tests ────────────────────────────────────────
+        // TODO
+        mod as_ref_vec {
+            use super::*;
+        }
+
+        // ── `AsRef<[T]>` Tests ──────────────────────────────────────────────
+        // TODO
+        mod as_ref_slice {
+            use super::*;
+        }
+
+        // ── `Borrow<[T]>` Tests ─────────────────────────────────────────────
+        // TODO
+        mod borrow_slice {
+            use super::*;
+        }
+
+        // ── `BorrowMut<[T]>` Tests ──────────────────────────────────────────
+        // TODO
+        mod borrow_mut_slice {
+            use super::*;
+        }
+
+        // ── `Clone` Tests ───────────────────────────────────────────────────
+        // TODO
+        mod clone {
+            use super::*;
+        }
+
+        // ── `Debug` Tests ───────────────────────────────────────────────────
+        // TODO
+        mod debug {
+            use super::*;
+        }
+
+        // ── `Default` Tests ─────────────────────────────────────────────────
+        // TODO
+        mod default {
+            use super::*;
+        }
+
+        // ── `Deref` Tests ───────────────────────────────────────────────────
+        // TODO
+        mod deref {
+            use super::*;
+        }
+
+        // ── `DerefMut` Tests ────────────────────────────────────────────────
+        // TODO
+        mod deref_mut {
+            use super::*;
+        }
+
+        // ── `DerefPure` Tests ───────────────────────────────────────────────
+        // TODO
+        mod deref_pure {
+            use super::*;
+        }
+
+        // ── `Drop` Tests ────────────────────────────────────────────────────
+        // TODO
+        mod drop {
+            use super::*;
+        }
+
+        // ── `Eq` Tests ──────────────────────────────────────────────────────
+        // TODO
+        mod eq {
+            use super::*;
+        }
+
+        // ── `Extend<&'a T>` Tests ───────────────────────────────────────────
+        // TODO
+        mod extend_ref {
+            use super::*;
+        }
+
+        // ── `Extend<T>` Tests ───────────────────────────────────────────────
+        // TODO
+        mod extend_val {
+            use super::*;
+        }
+
+        // ── `From<&'a Vec<T>>` Tests ────────────────────────────────────────
+        // TODO
+        mod from_vec_ref {
+            use super::*;
+        }
+
+        // ── `From<&[T; N]>` Tests ───────────────────────────────────────────
+        // TODO
+        mod from_array_ref {
+            use super::*;
+        }
+
+        // ── `From<&[T]>` Tests ──────────────────────────────────────────────
+        // TODO
+        mod from_slice_ref {
+            use super::*;
+        }
+
+        // ── `From<&mut [T; N]>` Tests ───────────────────────────────────────
+        // TODO
+        mod from_array_mut_ref {
+            use super::*;
+        }
+
+        // ── `From<&mut [T]>` Tests ──────────────────────────────────────────
+        // TODO
+        mod from_slice_mut_ref {
+            use super::*;
+        }
+
+        // ── `From<&str>` Tests ──────────────────────────────────────────────
+        // TODO
+        mod from_str {
+            use super::*;
+        }
+
+        // ── `From<BinaryHeap<T, A>>` Tests ──────────────────────────────────
+        // TODO
+        mod from_binary_heap {
+            use super::*;
+        }
+
+        // ── `From<Box<[T], A>>` Tests ───────────────────────────────────────
+        // TODO
+        mod from_boxed_slice {
+            use super::*;
+        }
+
+        // ── `From<ByteString>` Tests ────────────────────────────────────────
+        // TODO
+        mod from_byte_string {
+            use super::*;
+        }
+
+        // ── `From<CString>` Tests ───────────────────────────────────────────
+        // TODO
+        mod from_c_string {
+            use super::*;
+        }
+
+        // ── `From<Cow<'a, [T]>>` Tests ──────────────────────────────────────
+        // TODO
+        mod from_cow_slice {
+            use super::*;
+        }
+
+        // ── `From<String>` Tests ────────────────────────────────────────────
+        // TODO
+        mod from_string {
+            use super::*;
+        }
+
+        // ── `From<Vec<NonZero<u8>>>` Tests ──────────────────────────────────
+        // TODO
+        mod from_vec_nonzero_u8 {
+            use super::*;
+        }
+
+        // ── `From<Vec<T, A>>` Tests ─────────────────────────────────────────
+        // TODO
+        mod from_vec_alloc {
+            use super::*;
+        }
+
+        // ── `From<Vec<T>>` Tests ────────────────────────────────────────────
+        // TODO
+        mod from_vec {
+            use super::*;
+        }
+
+        // ── `From<VecDeque<T, A>>` Tests ────────────────────────────────────
+        // TODO
+        mod from_vec_deque {
+            use super::*;
+        }
+
+        // ── `From<[T; N]>` Tests ────────────────────────────────────────────
+        // TODO
+        mod from_array {
+            use super::*;
+        }
+
+        // ── `FromIterator<T>` Tests ─────────────────────────────────────────
+        // TODO
+        mod from_iterator {
+            use super::*;
+        }
+
+        // ── `Hash` Tests ────────────────────────────────────────────────────
+        // TODO
+        mod hash {
+            use super::*;
+        }
+
+        // ── `Index<I>` Tests ────────────────────────────────────────────────
+        // TODO
+        mod index {
+            use super::*;
+        }
+
+        // ── `IndexMut<I>` Tests ─────────────────────────────────────────────
+        // TODO
+        mod index_mut {
+            use super::*;
+        }
+
+        // ── `IntoIterator` (Value) Tests ────────────────────────────────────
+        // TODO
+        mod into_iterator_val {
+            use super::*;
+        }
+
+        // ── `IntoIterator` (Ref) Tests ──────────────────────────────────────
+        // TODO
+        mod into_iterator_ref {
+            use super::*;
+        }
+
+        // ── `IntoIterator` (Mut Ref) Tests ──────────────────────────────────
+        // TODO
+        mod into_iterator_mut_ref {
+            use super::*;
+        }
+
+        // ── `Ord` Tests ─────────────────────────────────────────────────────
+        // TODO
+        mod ord {
+            use super::*;
+        }
+
+        // ── `PartialEq<&[U; N]>` Tests ──────────────────────────────────────
+        // TODO
+        mod partial_eq_array_ref {
+            use super::*;
+        }
+
+        // ── `PartialEq<&[U]>` Tests ─────────────────────────────────────────
+        // TODO
+        mod partial_eq_slice_ref {
+            use super::*;
+        }
+
+        // ── `PartialEq<&mut [U]>` Tests ─────────────────────────────────────
+        // TODO
+        mod partial_eq_slice_mut_ref {
+            use super::*;
+        }
+
+        // ── `PartialEq<ByteStr>` Tests ──────────────────────────────────────
+        // TODO
+        mod partial_eq_byte_str {
+            use super::*;
+        }
+
+        // ── `PartialEq<ByteString>` Tests ───────────────────────────────────
+        // TODO
+        mod partial_eq_byte_string {
+            use super::*;
+        }
+
+        // ── `PartialEq<Vec<U, A>>` Tests ────────────────────────────────────
+        // TODO
+        mod partial_eq_vec {
+            use super::*;
+        }
+
+        // ── `PartialEq<Vec<u8>>` Tests ──────────────────────────────────────
+        // TODO
+        mod partial_eq_vec_u8 {
+            use super::*;
+        }
+
+        // ── `PartialEq<[U; N]>` Tests ───────────────────────────────────────
+        // TODO
+        mod partial_eq_array {
+            use super::*;
+        }
+
+        // ── `PartialEq<[U]>` Tests ──────────────────────────────────────────
+        // TODO
+        mod partial_eq_slice {
+            use super::*;
+        }
+
+        // ── `PartialOrd<Vec<T, A2>>` Tests ──────────────────────────────────
+        // TODO
+        mod partial_ord {
+            use super::*;
+        }
+
+        // ── `TryFrom<Vec<T, A>>` Tests ──────────────────────────────────────
+        // TODO
+        mod try_from_vec_alloc {
+            use super::*;
+        }
+
+        // ── `TryFrom<Vec<T>>` Tests ─────────────────────────────────────────
+        // TODO
+        mod try_from_vec {
+            use super::*;
+        }
+
+        // ── `TryFrom<Vec<u8>>` Tests ────────────────────────────────────────
+        // TODO
+        mod try_from_vec_u8 {
+            use super::*;
+        }
+
+        // ── `Write` Tests ───────────────────────────────────────────────────
+        // TODO
+        mod write {
+            use super::*;
+        }
+    }
+
+    // ── Auto Trait Implementations ──────────────────────────────────────────
+    mod auto_trait_implementations {
+        use super::*;
+
+        // ── `Freeze` Tests ──────────────────────────────────────────────────
+        // TODO
+        mod freeze {
+            use super::*;
+        }
+
+        // ── `RefUnwindSafe` Tests ───────────────────────────────────────────
+        // TODO
+        mod ref_unwind_safe {
+            use super::*;
+        }
+
+        // ── `Send` Tests ────────────────────────────────────────────────────
+        // TODO
+        mod send {
+            use super::*;
+        }
+
+        // ── `Sync` Tests ────────────────────────────────────────────────────
+        // TODO
+        mod sync {
+            use super::*;
+        }
+
+        // ── `Unpin` Tests ───────────────────────────────────────────────────
+        // TODO
+        mod unpin {
+            use super::*;
+        }
+
+        // ── `UnsafeUnpin` Tests ─────────────────────────────────────────────
+        // TODO
+        mod unsafe_unpin {
+            use super::*;
+        }
+
+        // ── `UnwindSafe` Tests ──────────────────────────────────────────────
+        // TODO
+        mod unwind_safe {
+            use super::*;
+        }
+    }
+
+    // ── Blanket Implementations ─────────────────────────────────────────────
+    mod blanket_trait_implementations {
+        use super::*;
+
+        // ── `Any` Tests ─────────────────────────────────────────────────────
+        // TODO
+        mod any {
+            use super::*;
+        }
+
+        // ── `Borrow<T>` Tests ───────────────────────────────────────────────
+        // TODO
+        mod borrow {
+            use super::*;
+        }
+
+        // ── `BorrowMut<T>` Tests ────────────────────────────────────────────
+        // TODO
+        mod borrow_mut {
+            use super::*;
+        }
+
+        // ── `CloneToUninit` Tests ───────────────────────────────────────────
+        // TODO
+        mod clone_to_uninit {
+            use super::*;
+        }
+
+        // ── `From<T>` Tests ─────────────────────────────────────────────────
+        // TODO
+        mod from_t {
+            use super::*;
+        }
+
+        // ── `Into<U>` Tests ─────────────────────────────────────────────────
+        // TODO
+        mod into_u {
+            use super::*;
+        }
+
+        // ── `Receiver` Tests ────────────────────────────────────────────────
+        // TODO
+        mod receiver {
+            use super::*;
+        }
+
+        // ── `ToOwned` Tests ─────────────────────────────────────────────────
+        // TODO
+        mod to_owned {
+            use super::*;
+        }
+
+        // ── `TryFrom<U>` Tests ──────────────────────────────────────────────
+        // TODO
+        mod try_from_u {
+            use super::*;
+        }
+
+        // ── `TryInto<U>` Tests ──────────────────────────────────────────────
+        // TODO
+        mod try_into_u {
+            use super::*;
+        }
+    }
 }
