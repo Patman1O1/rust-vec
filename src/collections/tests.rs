@@ -94,6 +94,13 @@ mod tests {
     mod methods {
         use super::*;
 
+        // ── `Vec::allocator()` Tests ────────────────────────────────────────
+        // TODO
+        mod allocator {
+            use super::*;
+        }
+
+
         // ── `Vec::append()` Tests ───────────────────────────────────────────
         // TODO
         mod append {
@@ -109,6 +116,12 @@ mod tests {
         // ── `Vec::as_mut_slice()` Tests ─────────────────────────────────────
         // TODO
         mod as_mut_slice {
+            use super::*;
+        }
+
+        // ── `Vec::as_non_null()` Tests ──────────────────────────────────────
+        // TODO
+        mod as_non_null {
             use super::*;
         }
 
@@ -133,6 +146,12 @@ mod tests {
         // ── `Vec::clear()` Tests ────────────────────────────────────────────
         // TODO
         mod clear {
+            use super::*;
+        }
+
+        // ── `Vec::const_make_global()` Tests ────────────────────────────────
+        // TODO
+        mod const_make_global {
             use super::*;
         }
 
@@ -190,9 +209,21 @@ mod tests {
             use super::*;
         }
 
+        // ── `Vec::into_array()` Tests ───────────────────────────────────────
+        // TODO
+        mod into_array {
+            use super::*;
+        }
+
         // ── `Vec::into_boxed_slice()` Tests ─────────────────────────────────
         // TODO
         mod into_boxed_slice {
+            use super::*;
+        }
+
+        // ── `Vec::into_chunks()` Tests ──────────────────────────────────────
+        // TODO
+        mod into_chunks {
             use super::*;
         }
 
@@ -202,9 +233,27 @@ mod tests {
             use super::*;
         }
 
+        // ── `Vec::into_parts()` Tests ───────────────────────────────────────
+        // TODO
+        mod into_parts {
+            use super::*;
+        }
+
+        // ── `Vec::into_parts_with_alloc()` Tests ────────────────────────────
+        // TODO
+        mod into_parts_with_alloc {
+            use super::*;
+        }
+
         // ── `Vec::into_raw_parts()` Tests ───────────────────────────────────
         // TODO
         mod into_raw_parts {
+            use super::*;
+        }
+
+        // ── `Vec::into_raw_parts_with_alloc()` Tests ────────────────────────
+        // TODO
+        mod into_raw_parts_with_alloc {
             use super::*;
         }
 
@@ -223,6 +272,12 @@ mod tests {
         // ── `Vec::len()` Tests ──────────────────────────────────────────────
         // TODO
         mod len {
+            use super::*;
+        }
+
+        // ── `Vec::peek_mut()` Tests ─────────────────────────────────────────
+        // TODO
+        mod peek_mut {
             use super::*;
         }
 
@@ -247,6 +302,18 @@ mod tests {
         // ── `Vec::push_mut()` Tests ─────────────────────────────────────────
         // TODO
         mod push_mut {
+            use super::*;
+        }
+
+        // ── `Vec::push_with_capacity()` Tests ───────────────────────────────
+        // TODO
+        mod push_with_capacity {
+            use super::*;
+        }
+
+        // ── `Vec::recycle()` Tests ──────────────────────────────────────────
+        // TODO
+        mod recycle {
             use super::*;
         }
 
@@ -322,6 +389,12 @@ mod tests {
             use super::*;
         }
 
+        // ── `Vec::split_at_spare_mut()` Tests ───────────────────────────────
+        // TODO
+        mod split_at_spare_mut {
+            use super::*;
+        }
+
         // ── `Vec::split_off()` Tests ────────────────────────────────────────
         // TODO
         mod split_off {
@@ -340,6 +413,12 @@ mod tests {
             use super::*;
         }
 
+        // ── `Vec::try_remove()` Tests ───────────────────────────────────────
+        // TODO
+        mod try_remove {
+            use super::*;
+        }
+
         // ── `Vec::try_reserve()` Tests ──────────────────────────────────────
         // TODO
         mod try_reserve {
@@ -349,6 +428,18 @@ mod tests {
         // ── `Vec::try_reserve_exact()` Tests ────────────────────────────────
         // TODO
         mod try_reserve_exact {
+            use super::*;
+        }
+
+        // ── `Vec::try_shrink_to()` Tests ────────────────────────────────────
+        // TODO
+        mod try_shrink_to {
+            use super::*;
+        }
+
+        // ── `Vec::try_shrink_to_fit()` Tests ────────────────────────────────
+        // TODO
+        mod try_shrink_to_fit {
             use super::*;
         }
     }
