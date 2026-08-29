@@ -34,11 +34,60 @@ mod tests {
             use super::*;
         }
 
+        // ── `Vec::try_with_capacity()` Tests ────────────────────────────────
+        // TODO
+        mod try_with_capacity {
+
+        }
+
         // ── `Vec::from_raw_parts()` Tests ───────────────────────────────────
         // TODO
         mod from_raw_parts {
             use super::*;
         }
+
+        // ── `Vec::from_parts()` Tests ───────────────────────────────────────
+        // TODO
+        mod from_parts {
+            use super::*;
+        }
+        
+        // ── `Vec::from_fn()` Tests ──────────────────────────────────────────
+        // TODO
+        mod from_fn {
+            use super::*;
+        }
+
+        // ── `Vec::with_capacity_in()` Tests ─────────────────────────────────
+        // TODO
+        mod with_capacity_in {
+            use super::*;    
+        }
+
+        // ── `Vec::new_in()` Tests ───────────────────────────────────────────
+        // TODO
+        mod new_in {
+            use super::*;
+        }
+
+        // ── `Vec::try_with_capacity_in()` Tests ─────────────────────────────
+        // TODO
+        mod try_with_capacity_in {
+            use super::*;
+        }
+
+        // ── `Vec::from_raw_parts_in()` Tests ────────────────────────────────
+        // TODO
+        mod from_raw_parts_in {
+            use super::*;
+        }
+
+        // ── `Vec::from_parts_in()` Tests ────────────────────────────────────
+        // TODO
+        mod from_parts_in {
+            use super::*;
+        }
+
     }
 
     // ── Method Tests ────────────────────────────────────────────────────────
