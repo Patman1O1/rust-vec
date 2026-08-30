@@ -20,6 +20,12 @@ use std::{
     }, collections::TryReserveError
 };
 
+mod drain;
+mod extract_if;
+mod into_iter;
+mod peek_mut;
+mod splice;
+
 static INITIAL_CAPACITY: usize = 4;
 
 pub struct Vec<T, A: GlobalAlloc = System> {
