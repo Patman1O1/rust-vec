@@ -74,7 +74,10 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn fmt(&self, f: &mut Formatter<'_>) -> Result<(), Error>
+                    // fn fmt(
+                    //      &self, 
+                    //      f: &mut Formatter<'_>
+                    // ) -> Result<(), Error>
                 }
             }
         }
@@ -100,7 +103,9 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn next_chunk_back<const N: usize>(&mut self) -> Result<[Self::Item; N], IntoIter<Self::Item, N>>
+                    // fn next_chunk_back<const N: usize>(
+                    //     &mut self
+                    // ) -> Result<[Self::Item; N], IntoIter<Self::Item, N>>
                 }
 
                 // ── `DoubleEndedIterator::advance_back_by()` Tests ──────────
@@ -108,7 +113,10 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn advance_back_by(&mut self, n: usize) -> Result<(), NonZero<usize>>
+                    // fn advance_back_by(
+                    //     &mut self, 
+                    //     n: usize
+                    // ) -> Result<(), NonZero<usize>>
                 }
 
                 // ── `DoubleEndedIterator::nth_back()` Tests ─────────────────
@@ -140,7 +148,10 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn rfind<P>(&mut self, predicate: P) -> Option<Self::Item>
+                    // fn rfind<P>(
+                    //     &mut self,
+                    //     predicate: P
+                    // ) -> Option<Self::Item>
                 }
             }
         }
@@ -231,7 +242,10 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn next_chunk<const N: usize>(&mut self) -> Result<[Self::Item; N], IntoIter<Self::Item, N>>
+                    // fn next_chunk<const N: usize>(
+                    //     &mut self
+                    //  ) -> Result<[Self::Item; N], IntoIter<Self::Item, N>>
+
                 }
 
                 // ── `Iterator::count()` Tests ───────────────────────────────
@@ -255,7 +269,11 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn advance_by(&mut self, n: usize) -> Result<(), NonZero<usize>>
+                    // fn advance_by(
+                    //     &mut self, 
+                    //     n: usize
+                    // ) -> Result<(), NonZero<usize>>
+
                 }
 
                 // ── `Iterator::nth()` Tests ─────────────────────────────────
@@ -264,6 +282,7 @@ mod tests {
 
                     // Signature:
                     // fn nth(&mut self, n: usize) -> Option<Self::Item>
+
                 }
 
                 // ── `Iterator::step_by()` Tests ──────────────────────────────
@@ -272,6 +291,7 @@ mod tests {
 
                     // Signature:
                     // fn step_by(self, step: usize) -> StepBy<Self>
+
                 }
 
                 // ── `Iterator::chain()` Tests ───────────────────────────────
@@ -280,6 +300,7 @@ mod tests {
 
                     // Signature:
                     // fn chain<U>(self, other: U) -> Chain<Self, U::IntoIter>
+
                 }
 
                 // ── `Iterator::zip()` Tests ─────────────────────────────────
@@ -288,6 +309,7 @@ mod tests {
 
                     // Signature:
                     // fn zip<U>(self, other: U) -> Zip<Self, U::IntoIter>
+
                 }
 
                 // ── `Iterator::intersperse()` Tests ─────────────────────────
@@ -295,7 +317,11 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn intersperse(self, separator: Self::Item) -> Intersperse<Self>
+                    // fn intersperse(
+                    //     self, 
+                    //     separator: Self::Item
+                    // ) -> Intersperse<Self>
+
                 }
 
                 // ── `Iterator::intersperse_with()` Tests ────────────────────
@@ -303,7 +329,11 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn intersperse_with<G>(self, separator: G) -> IntersperseWith<Self, G>
+                    // fn intersperse_with<G>(
+                    //     self, 
+                    //     separator: G
+                    // ) -> IntersperseWith<Self, G>
+
                 }
 
                 // ── `Iterator::map()` Tests ─────────────────────────────────
@@ -312,6 +342,7 @@ mod tests {
 
                     // Signature:
                     // fn map<B, F>(self, f: F) -> Map<Self, F>
+
                 }
 
                 // ── `Iterator::enumerate()` Tests ───────────────────────────
@@ -320,6 +351,7 @@ mod tests {
 
                     // Signature:
                     // fn enumerate(self) -> Enumerate<Self>
+
                 }
 
                 // ── `Iterator::peekable()` Tests ────────────────────────────
@@ -328,6 +360,7 @@ mod tests {
 
                     // Signature:
                     // fn peekable(self) -> Peekable<Self>
+
                 }
 
                 // ── `Iterator::skip_while()` Tests ──────────────────────────
@@ -335,7 +368,11 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn skip_while<P>(self, predicate: P) -> SkipWhile<Self, P>
+                    // fn skip_while<P>(
+                    //     self, 
+                    //     predicate: P
+                    // ) -> SkipWhile<Self, P>
+
                 }
 
                 // ── `Iterator::map_while()` Tests ───────────────────────────
@@ -343,7 +380,11 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn map_while<B, P>(self, predicate: P) -> MapWhile<Self, P>
+                    // fn map_while<B, P>(
+                    //     self, 
+                    //     predicate: P
+                    // ) -> MapWhile<Self, P>
+
                 }
 
                 // ── `Iterator::skip()` Tests ────────────────────────────────
@@ -352,6 +393,7 @@ mod tests {
 
                     // Signature:
                     // fn skip(self, n: usize) -> Skip<Self>
+
                 }
 
                 // ── `Iterator::take()` Tests ────────────────────────────────
@@ -360,6 +402,7 @@ mod tests {
 
                     // Signature:
                     // fn take(self, n: usize) -> Take<Self>
+
                 }
 
                 // ── `Iterator::scan()` Tests ────────────────────────────────
@@ -367,7 +410,12 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn scan<St, B, F>(self, initial_state: St, f: F) -> Scan<Self, St, F>
+                    // fn scan<St, B, F>(
+                    //     self, 
+                    //     initial_state: St,
+                    //     f: F
+                    // ) -> Scan<Self, St, F>
+
                 }
 
                 // ── `Iterator::flat_map()` Tests ────────────────────────────
@@ -376,6 +424,7 @@ mod tests {
 
                     // Signature:
                     // fn flat_map<U, F>(self, f: F) -> FlatMap<Self, U, F>
+
                 }
 
                 // ── `Iterator::flatten()` Tests ─────────────────────────────
@@ -384,6 +433,7 @@ mod tests {
 
                     // Signature:
                     // fn flatten(self) -> Flatten<Self>
+
                 }
 
                 // ── `Iterator::map_windows()` Tests ─────────────────────────
@@ -391,7 +441,11 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn map_windows<F, R, const N: usize>(self, f: F) -> MapWindows<Self, F, N>
+                    // fn map_windows<F, R, const N: usize>(
+                    //     self, 
+                    //     f: F
+                    // ) -> MapWindows<Self, F, N>
+
                 }
 
                 // ── `Iterator::fuse()` Tests ────────────────────────────────
@@ -400,6 +454,7 @@ mod tests {
 
                     // Signature:
                     // fn fuse(self) -> Fuse<Self>
+
                 }
 
                 // ── `Iterator::inspect()` Tests ─────────────────────────────
@@ -408,6 +463,7 @@ mod tests {
 
                     // Signature:
                     // fn inspect<F>(self, f: F) -> Inspect<Self, F>
+
                 }
 
                 // ── `Iterator::by_ref()` Tests ──────────────────────────────
@@ -416,6 +472,7 @@ mod tests {
 
                     // Signature:
                     // fn by_ref(&mut self) -> &mut Self
+
                 }
 
                 // ── `Iterator::collect()` Tests ─────────────────────────────
@@ -424,6 +481,7 @@ mod tests {
 
                     // Signature:
                     // fn collect<B>(self) -> B
+
                 }
 
                 // ── `Iterator::try_collect()` Tests ─────────────────────────
@@ -431,7 +489,10 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn try_collect<B>(&mut self) -> ChangeOutputType<Self::Item, B>
+                    // fn try_collect<B>(
+                    //     &mut self
+                    // ) -> ChangeOutputType<Self::Item, B>
+
                 }
 
                 // ── `Iterator::collect_into()` Tests ────────────────────────
@@ -440,6 +501,7 @@ mod tests {
 
                     // Signature:
                     // fn collect_into<E>(self, collection: &mut E) -> &mut E
+
                 }
 
                 // ── `Iterator::partition()` Tests ───────────────────────────
@@ -448,6 +510,7 @@ mod tests {
 
                     // Signature:
                     // fn partition<B, F>(self, f: F) -> (B, B)
+
                 }
 
                 // ── `Iterator::partition_in_place()` Tests ──────────────────
@@ -455,7 +518,11 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn partition_in_place<'a, P>(self, predicate: P) -> usize
+                    // fn partition_in_place<'a, P>(
+                    //     self, 
+                    //     predicate: P
+                    // ) -> usize
+
                 }
 
                 // ── `Iterator::is_partitioned()` Tests ──────────────────────
@@ -464,6 +531,7 @@ mod tests {
 
                     // Signature:
                     // fn is_partitioned<P>(self, predicate: P) -> bool
+
                 }
 
                 // ── `Iterator::try_fold()` Tests ────────────────────────────
@@ -472,6 +540,7 @@ mod tests {
 
                     // Signature:
                     // fn try_fold<B, F, R>(&mut self, init: B, f: F) -> R
+
                 }
 
                 // ── `Iterator::try_for_each()` Tests ────────────────────────
@@ -480,6 +549,7 @@ mod tests {
 
                     // Signature:
                     // fn try_for_each<F, R>(&mut self, f: F) -> R
+
                 }
 
                 // ── `Iterator::fold()` Tests ────────────────────────────────
@@ -488,6 +558,7 @@ mod tests {
 
                     // Signature:
                     // fn fold<B, F>(self, init: B, f: F) -> B
+
                 }
 
                 // ── `Iterator::reduce()` Tests ──────────────────────────────
@@ -496,6 +567,7 @@ mod tests {
 
                     // Signature:
                     // fn reduce<F>(self, f: F) -> Option<Self::Item>
+
                 }
 
                 // ── `Iterator::try_reduce()` Tests ──────────────────────────
@@ -504,6 +576,7 @@ mod tests {
 
                     // Signature:
                     // fn try_reduce<F, R>(self, f: F) -> R
+
                 }
 
                 // ── `Iterator::all()` Tests ─────────────────────────────────
@@ -512,6 +585,7 @@ mod tests {
 
                     // Signature:
                     // fn all<P>(&mut self, predicate: P) -> bool
+
                 }
 
                 // ── `Iterator::any()` Tests ─────────────────────────────────
@@ -520,6 +594,7 @@ mod tests {
 
                     // Signature:
                     // fn any<P>(&mut self, predicate: P) -> bool
+
                 }
 
                 // ── `Iterator::find()` Tests ────────────────────────────────
@@ -527,7 +602,11 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn find<P>(&mut self, predicate: P) -> Option<Self::Item>
+                    // fn find<P>(
+                    //     &mut self, 
+                    //     predicate: P
+                    // ) -> Option<Self::Item>
+
                 }
 
                 // ── `Iterator::find_map()` Tests ────────────────────────────
@@ -536,6 +615,7 @@ mod tests {
 
                     // Signature:
                     // fn find_map<B, F>(&mut self, f: F) -> Option<B>
+
                 }
 
                 // ── `Iterator::try_find()` Tests ────────────────────────────
@@ -543,7 +623,11 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn try_find<F, R>(&mut self, f: F) -> Result<Option<Self::Item>, R::Error>
+                    // fn try_find<F, R>(
+                    //     &mut self,
+                    //     f: F
+                    // ) -> Result<Option<Self::Item>, R::Error>
+
                 }
 
                 // ── `Iterator::position()` Tests ────────────────────────────
@@ -552,6 +636,7 @@ mod tests {
 
                     // Signature:
                     // fn position<P>(&mut self, predicate: P) -> Option<usize>
+
                 }
 
                 // ── `Iterator::rposition()` Tests ───────────────────────────
@@ -559,7 +644,11 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn rposition<P>(&mut self, predicate: P) -> Option<usize>
+                    // fn rposition<P>(
+                    //     &mut self, 
+                    //     predicate: P
+                    // ) -> Option<usize>
+
                 }
 
                 // ── `Iterator::max()` Tests ─────────────────────────────────
@@ -568,6 +657,7 @@ mod tests {
 
                     // Signature:
                     // fn max(self) -> Option<Self::Item>
+
                 }
 
                 // ── `Iterator::min()` Tests ─────────────────────────────────
@@ -576,6 +666,7 @@ mod tests {
 
                     // Signature:
                     // fn min(self) -> Option<Self::Item>
+
                 }
 
                 // ── `Iterator::max_by_key()` Tests ──────────────────────────
@@ -584,6 +675,7 @@ mod tests {
 
                     // Signature:
                     // fn max_by_key<B, F>(self, f: F) -> Option<Self::Item>
+
                 }
 
                 // ── `Iterator::max_by()` Tests ──────────────────────────────
@@ -592,6 +684,7 @@ mod tests {
 
                     // Signature:
                     // fn max_by<F>(self, compare: F) -> Option<Self::Item>
+
                 }
 
                 // ── `Iterator::min_by_key()` Tests ──────────────────────────
@@ -600,6 +693,7 @@ mod tests {
 
                     // Signature:
                     // fn min_by_key<B, F>(self, f: F) -> Option<Self::Item>
+
                 }
 
                 // ── `Iterator::min_by()` Tests ──────────────────────────────
@@ -608,6 +702,7 @@ mod tests {
 
                     // Signature:
                     // fn min_by<F>(self, compare: F) -> Option<Self::Item>
+
                 }
 
                 // ── `Iterator::rev()` Tests ─────────────────────────────────
@@ -616,6 +711,7 @@ mod tests {
 
                     // Signature:
                     // fn rev(self) -> Rev<Self>
+
                 }
 
                 // ── `Iterator::unzip()` Tests ───────────────────────────────
@@ -624,6 +720,7 @@ mod tests {
 
                     // Signature:
                     // fn unzip<A, B, FromA, FromB>(self) -> (FromA, FromB)
+
                 }
 
                 // ── `Iterator::copied()` Tests ──────────────────────────────
@@ -632,6 +729,7 @@ mod tests {
 
                     // Signature:
                     // fn copied<'a, T>(self) -> Copied<Self>
+
                 }
 
                 // ── `Iterator::cloned()` Tests ──────────────────────────────
@@ -640,6 +738,7 @@ mod tests {
 
                     // Signature:
                     // fn cloned<'a, T>(self) -> Cloned<Self>
+
                 }
 
                 // ── `Iterator::cycle()` Tests ───────────────────────────────
@@ -648,6 +747,7 @@ mod tests {
 
                     // Signature:
                     // fn cycle(self) -> Cycle<Self>
+
                 }
 
                 // ── `Iterator::array_chunks()` Tests ────────────────────────
@@ -655,7 +755,10 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn array_chunks<const N: usize>(self) -> ArrayChunks<Self, N>
+                    // fn array_chunks<const N: usize>(
+                    //     self
+                    // ) -> ArrayChunks<Self, N>
+
                 }
 
                 // ── `Iterator::sum()` Tests ─────────────────────────────────
@@ -664,6 +767,7 @@ mod tests {
 
                     // Signature:
                     // fn sum<S>(self) -> S
+
                 }
 
                 // ── `Iterator::product()` Tests ─────────────────────────────
@@ -672,6 +776,7 @@ mod tests {
 
                     // Signature:
                     // fn product<P>(self) -> P
+
                 }
 
                 // ── `Iterator::cmp()` Tests ─────────────────────────────────
@@ -680,6 +785,7 @@ mod tests {
 
                     // Signature:
                     // fn cmp<I>(self, other: I) -> Ordering
+
                 }
 
                 // ── `Iterator::cmp_by()` Tests ──────────────────────────────
@@ -688,6 +794,7 @@ mod tests {
 
                     // Signature:
                     // fn cmp_by<I, F>(self, other: I, cmp: F) -> Ordering
+
                 }
 
                 // ── `Iterator::partial_cmp()` Tests ─────────────────────────
@@ -696,6 +803,7 @@ mod tests {
 
                     // Signature:
                     // fn partial_cmp<I>(self, other: I) -> Option<Ordering>
+
                 }
 
                 // ── `Iterator::partial_cmp_by()` Tests ──────────────────────
@@ -703,7 +811,12 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn partial_cmp_by<I, F>(self, other: I, partial_cmp: F) -> Option<Ordering>
+                    // fn partial_cmp_by<I, F>(
+                    //     self,
+                    //     other: I,
+                    //     partial_cmp: F
+                    // ) -> Option<Ordering>
+
                 }
 
                 // ── `Iterator::eq()` Tests ──────────────────────────────────
@@ -712,6 +825,7 @@ mod tests {
 
                     // Signature:
                     // fn eq<I>(self, other: I) -> bool
+
                 }
 
                 // ── `Iterator::eq_by()` Tests ───────────────────────────────
@@ -720,6 +834,7 @@ mod tests {
 
                     // Signature:
                     // fn eq_by<I, F>(self, other: I, eq: F) -> bool
+
                 }
 
                 // ── `Iterator::ne()` Tests ──────────────────────────────────
@@ -728,6 +843,7 @@ mod tests {
 
                     // Signature:
                     // fn ne<I>(self, other: I) -> bool
+
                 }
 
                 // ── `Iterator::lt()` Tests ──────────────────────────────────
@@ -736,6 +852,7 @@ mod tests {
 
                     // Signature:
                     // fn lt<I>(self, other: I) -> bool
+
                 }
 
                 // ── `Iterator::le()` Tests ──────────────────────────────────
@@ -744,6 +861,7 @@ mod tests {
 
                     // Signature:
                     // fn le<I>(self, other: I) -> bool
+
                 }
 
                 // ── `Iterator::gt()` Tests ──────────────────────────────────
@@ -752,6 +870,7 @@ mod tests {
 
                     // Signature:
                     // fn gt<I>(self, other: I) -> bool
+
                 }
 
                 // ── `Iterator::ge()` Tests ──────────────────────────────────
@@ -760,6 +879,7 @@ mod tests {
 
                     // Signature:
                     // fn ge<I>(self, other: I) -> bool
+
                 }
 
                 // ── `Iterator::is_sorted()` Tests ───────────────────────────
@@ -768,6 +888,7 @@ mod tests {
 
                     // Signature:
                     // fn is_sorted(self) -> bool
+
                 }
 
                 // ── `Iterator::is_sorted_by()` Tests ────────────────────────
@@ -776,6 +897,7 @@ mod tests {
 
                     // Signature:
                     // fn is_sorted_by<F>(self, compare: F) -> bool
+
                 }
 
                 // ── `Iterator::is_sorted_by_key()` Tests ────────────────────
@@ -784,6 +906,7 @@ mod tests {
 
                     // Signature:
                     // fn is_sorted_by_key<F, K>(self, f: F) -> bool
+
                 }
             }
         }
@@ -801,7 +924,10 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn try_from(value: Vec<T, A>) -> Result<Self, Self::Error>
+                    // fn try_from(
+                    //     value: Vec<T, A>
+                    // ) -> Result<Self, Self::Error>
+
                 }
             }
         }
@@ -820,6 +946,7 @@ mod tests {
 
                     // Signature:
                     // fn try_from(value: Vec<T>) -> Result<Self, Self::Error>
+
                 }
             }
         }
@@ -838,6 +965,7 @@ mod tests {
 
                     // Signature:
                     // fn try_from(value: Vec<u8>) -> Result<Self, Self::Error>
+
                 }
             }
         }
@@ -856,6 +984,7 @@ mod tests {
 
                     // Signature:
                     // fn write_str(&mut self, s: &str) -> Result<(), Error>
+
                 }
 
                 // ── `Write::write_char()` Tests ─────────────────────────────
@@ -864,6 +993,7 @@ mod tests {
 
                     // Signature:
                     // fn write_char(&mut self, c: char) -> Result<(), Error>
+
                 }
 
                 // ── `Write::write_fmt()` Tests ──────────────────────────────
@@ -871,7 +1001,11 @@ mod tests {
                     use super::*;
 
                     // Signature:
-                    // fn write_fmt(&mut self, args: Arguments<'_>) -> Result<(), Error>
+                    // fn write_fmt(
+                    //     &mut self,
+                    //     args: Arguments<'_>
+                    // ) -> Result<(), Error>
+                    
                 }
             }
         }
