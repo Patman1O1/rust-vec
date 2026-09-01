@@ -1246,69 +1246,235 @@ mod tests {
         use super::*;
 
         // ── `AsMut<Vec<T, A>>` Tests ────────────────────────────────────────
-        // TODO
         mod as_mut_vec {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `AsMut<Vec<T, A>>::as_mut()` Tests ──────────────────────
+                // TODO
+                mod as_mut {
+                    use super::*;
+
+                    // Signature:
+                    // fn as_mut(&mut self) -> &mut Vec<T, A>
+
+                }
+            }
         }
 
         // ── `AsMut<[T]>` Tests ──────────────────────────────────────────────
-        // TODO
         mod as_mut_slice {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `AsMut<[T]>::as_mut()` Tests ────────────────────────────
+                // TODO
+                mod as_mut {
+                    use super::*;
+
+                    // Signature:
+                    // fn as_mut(&mut self) -> &mut [T]
+
+                }
+            }
         }
 
         // ── `AsRef<Vec<T, A>>` Tests ────────────────────────────────────────
-        // TODO
         mod as_ref_vec {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `AsRef<Vec<T, A>>::as_ref()` Tests ──────────────────────
+                // TODO
+                mod as_ref {
+                    use super::*;
+
+                    // Signature:
+                    // fn as_ref(&self) -> &Vec<T, A>
+
+                }
+            }
         }
 
         // ── `AsRef<[T]>` Tests ──────────────────────────────────────────────
-        // TODO
         mod as_ref_slice {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `AsRef<[T]>::as_ref()` Tests ────────────────────────────
+                // TODO
+                mod as_ref {
+                    use super::*;
+
+                    // Signature:
+                    // fn as_ref(&self) -> &[T]
+
+                }
+            }
         }
 
         // ── `Borrow<[T]>` Tests ─────────────────────────────────────────────
-        // TODO
         mod borrow_slice {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `Borrow<[T]>::borrow()` Tests ───────────────────────────
+                // TODO
+                mod borrow {
+                    use super::*;
+
+                    // Signature:
+                    // fn borrow(&self) -> &[T]
+
+                }
+            }
         }
 
         // ── `BorrowMut<[T]>` Tests ──────────────────────────────────────────
-        // TODO
         mod borrow_mut_slice {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `BorrowMut<[T]>::borrow_mut()` Tests ────────────────────
+                // TODO
+                mod borrow_mut {
+                    use super::*;
+
+                    // Signature:
+                    // fn borrow_mut(&mut self) -> &mut [T]
+
+                }
+            }
         }
 
         // ── `Clone` Tests ───────────────────────────────────────────────────
-        // TODO
         mod clone {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `Clone::clone()` Tests ──────────────────────────────────
+                // TODO
+                mod clone {
+                    use super::*;
+
+                    // Signature:
+                    // fn clone(&self) -> Vec<T, A>
+                }
+
+                // ── `Clone::clone_from()` Tests ─────────────────────────────
+                // TODO
+                mod clone_from {
+                    use super::*;
+
+                    // Signature:
+                    // fn clone_from(&mut self, source: &Vec<T, A>)
+
+                }
+            }
         }
 
         // ── `Debug` Tests ───────────────────────────────────────────────────
-        // TODO
         mod debug {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `Debug::fmt()` Tests ────────────────────────────────────
+                // TODO
+                mod fmt {
+                    use super::*;
+
+                    // Signature:
+                    // fn fmt(
+                    //      &self,
+                    //      f: &mut Formatter<'_>
+                    // ) -> Result<(), Error>
+
+                }
+            }
         }
 
         // ── `Default` Tests ─────────────────────────────────────────────────
-        // TODO
         mod default {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `Default::default()` Tests ──────────────────────────────
+                // TODO
+                mod default {
+                    use super::*;
+
+                    // Signature:
+                    // fn default() -> Vec<T>
+
+                }
+            }
         }
 
         // ── `Deref` Tests ───────────────────────────────────────────────────
-        // TODO
         mod deref {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `Deref::deref()` Tests ──────────────────────────────────
+                // TODO
+                mod deref {
+                    use super::*;
+
+                    // Signature:
+                    // fn deref(&self) -> &[T]
+
+                }
+            }
         }
 
         // ── `DerefMut` Tests ────────────────────────────────────────────────
-        // TODO
         mod deref_mut {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `DerefMut::deref_mut()` Tests ───────────────────────────
+                // TODO
+                mod deref_mut {
+                    use super::*;
+
+                    // Signature:
+                    // fn deref_mut(&mut self) -> &mut [T]
+
+                }
+            }
         }
 
         // ── `DerefPure` Tests ───────────────────────────────────────────────
@@ -1318,9 +1484,23 @@ mod tests {
         }
 
         // ── `Drop` Tests ────────────────────────────────────────────────────
-        // TODO
         mod drop {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `Drop::drop()` Tests ────────────────────────────────────
+                // TODO
+                mod drop {
+                    use super::*;
+
+                    // Signature:
+                    // fn drop(&mut self)
+
+                }
+            }
         }
 
         // ── `Eq` Tests ──────────────────────────────────────────────────────
@@ -1330,252 +1510,876 @@ mod tests {
         }
 
         // ── `Extend<&'a T>` Tests ───────────────────────────────────────────
-        // TODO
         mod extend_ref {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `Extend<&'a T>::extend()` Tests ─────────────────────────
+                // TODO
+                mod extend {
+                    use super::*;
+
+                    // Signature:
+                    // fn extend<I: IntoIterator<Item = &'a T>>(
+                    //      &mut self, iter: I
+                    // )
+
+                }
+            }
         }
 
         // ── `Extend<T>` Tests ───────────────────────────────────────────────
-        // TODO
         mod extend_val {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `Extend<T>::extend()` Tests ─────────────────────────────
+                // TODO
+                mod extend {
+                    use super::*;
+
+                    // Signature:
+                    // fn extend<I: IntoIterator<Item = T>>(&mut self, iter: I)
+
+                }
+            }
         }
 
         // ── `From<&'a Vec<T>>` Tests ────────────────────────────────────────
-        // TODO
         mod from_vec_ref {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<&'a Vec<T>>::from()` Tests ────────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(v: &'a Vec<T>) -> Vec<T>
+
+                }
+            }
         }
 
         // ── `From<&[T; N]>` Tests ───────────────────────────────────────────
-        // TODO
         mod from_array_ref {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<&[T; N]>::from()` Tests ───────────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(s: &[T; N]) -> Vec<T>
+
+                }
+            }
         }
 
         // ── `From<&[T]>` Tests ──────────────────────────────────────────────
-        // TODO
         mod from_slice_ref {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<&[T]>::from()` Tests ──────────────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(s: &[T]) -> Vec<T>
+
+                }
+            }
         }
 
         // ── `From<&mut [T; N]>` Tests ───────────────────────────────────────
-        // TODO
         mod from_array_mut_ref {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<&mut [T; N]>::from()` Tests ───────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(s: &mut [T; N]) -> Vec<T>
+
+                }
+            }
         }
 
         // ── `From<&mut [T]>` Tests ──────────────────────────────────────────
-        // TODO
         mod from_slice_mut_ref {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<&mut [T]>::from()` Tests ──────────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(s: &mut [T]) -> Vec<T>
+
+                }
+            }
         }
 
         // ── `From<&str>` Tests ──────────────────────────────────────────────
-        // TODO
         mod from_str {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<&str>::from()` Tests ──────────────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(s: &str) -> Vec<u8>
+
+                }
+            }
         }
 
         // ── `From<BinaryHeap<T, A>>` Tests ──────────────────────────────────
-        // TODO
         mod from_binary_heap {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<BinaryHeap<T, A>>::from()` Tests ──────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(heap: BinaryHeap<T, A>) -> Vec<T, A>
+
+                }
+            }
         }
 
         // ── `From<Box<[T], A>>` Tests ───────────────────────────────────────
-        // TODO
         mod from_boxed_slice {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<Box<[T], A>>::from()` Tests ───────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(s: Box<[T], A>) -> Vec<T, A>
+
+                }
+            }
         }
 
         // ── `From<ByteString>` Tests ────────────────────────────────────────
-        // TODO
         mod from_byte_string {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<ByteString>::from()` Tests ────────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(s: ByteString) -> Vec<u8>
+
+                }
+            }
         }
 
         // ── `From<CString>` Tests ───────────────────────────────────────────
-        // TODO
         mod from_c_string {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<CString>::from()` Tests ───────────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(s: CString) -> Vec<u8>
+
+                }
+            }
         }
 
         // ── `From<Cow<'a, [T]>>` Tests ──────────────────────────────────────
-        // TODO
         mod from_cow_slice {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<Cow<'a, [T]>>::from()` Tests ──────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(s: Cow<'a, [T]>) -> Vec<T>
+
+                }
+            }
         }
 
         // ── `From<String>` Tests ────────────────────────────────────────────
-        // TODO
         mod from_string {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<String>::from()` Tests ────────────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(s: String) -> Vec<u8>
+
+                }
+            }
         }
 
         // ── `From<Vec<NonZero<u8>>>` Tests ──────────────────────────────────
-        // TODO
         mod from_vec_nonzero_u8 {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<Vec<NonZero<u8>>>::from()` Tests ──────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(v: Vec<NonZero<u8>>) -> Vec<u8>
+
+                }
+            }
         }
 
         // ── `From<Vec<T, A>>` Tests ─────────────────────────────────────────
-        // TODO
         mod from_vec_alloc {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<Vec<T, A>>::from()` Tests ─────────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(v: Vec<T, A>) -> Self
+
+                }
+            }
         }
 
         // ── `From<Vec<T>>` Tests ────────────────────────────────────────────
-        // TODO
         mod from_vec {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<Vec<T>>::from()` Tests ────────────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(v: Vec<T>) -> Self
+
+                }
+            }
         }
 
         // ── `From<VecDeque<T, A>>` Tests ────────────────────────────────────
-        // TODO
         mod from_vec_deque {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<VecDeque<T, A>>::from()` Tests ────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(v: VecDeque<T, A>) -> Vec<T, A>
+
+                }
+            }
         }
 
         // ── `From<[T; N]>` Tests ────────────────────────────────────────────
-        // TODO
         mod from_array {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `From<[T; N]>::from()` Tests ────────────────────────────
+                // TODO
+                mod from {
+                    use super::*;
+
+                    // Signature:
+                    // fn from(s: [T; N]) -> Vec<T>
+
+                }
+            }
         }
 
         // ── `FromIterator<T>` Tests ─────────────────────────────────────────
-        // TODO
         mod from_iterator {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `FromIterator<T>::from_iter()` Tests ────────────────────
+                // TODO
+                mod from_iter {
+                    use super::*;
+
+                    // Signature:
+                    // fn from_iter<I: IntoIterator<Item = T>>(
+                    //      iter: I
+                    // ) -> Vec<T>
+
+                }
+            }
         }
 
         // ── `Hash` Tests ────────────────────────────────────────────────────
-        // TODO
         mod hash {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `Hash::hash()` Tests ────────────────────────────────────
+                // TODO
+                mod hash {
+                    use super::*;
+
+                    // Signature:
+                    // fn hash<H: Hasher>(&self, state: &mut H)
+
+                }
+            }
         }
 
         // ── `Index<I>` Tests ────────────────────────────────────────────────
-        // TODO
         mod index {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `Index<I>::index()` Tests ───────────────────────────────
+                // TODO
+                mod index {
+                    use super::*;
+
+                    // Signature:
+                    // fn index(&self, index: I) -> &Self::Output
+
+                }
+            }
         }
 
         // ── `IndexMut<I>` Tests ─────────────────────────────────────────────
-        // TODO
         mod index_mut {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `IndexMut<I>::index_mut()` Tests ────────────────────────
+                // TODO
+                mod index_mut {
+                    use super::*;
+
+                    // Signature:
+                    // fn index_mut(&mut self, index: I) -> &mut Self::Output
+
+                }
+            }
         }
 
         // ── `IntoIterator` (Value) Tests ────────────────────────────────────
-        // TODO
         mod into_iterator_val {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `IntoIterator::into_iter()` (Value) Tests ───────────────
+                // TODO
+                mod into_iter {
+                    use super::*;
+
+                    // Signature:
+                    // fn into_iter(self) -> IntoIter<T, A>
+
+                }
+            }
         }
 
         // ── `IntoIterator` (Ref) Tests ──────────────────────────────────────
-        // TODO
         mod into_iterator_ref {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `IntoIterator::into_iter()` (Ref) Tests ─────────────────
+                // TODO
+                mod into_iter {
+                    use super::*;
+
+                    // Signature:
+                    // fn into_iter(self) -> Iter<'a, T>
+
+                }
+            }
         }
 
         // ── `IntoIterator` (Mut Ref) Tests ──────────────────────────────────
-        // TODO
         mod into_iterator_mut_ref {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `IntoIterator::into_iter()` (Mut Ref) Tests ─────────────
+                // TODO
+                mod into_iter {
+                    use super::*;
+
+                    // Signature:
+                    // fn into_iter(self) -> IterMut<'a, T>
+
+                }
+            }
         }
 
         // ── `Ord` Tests ─────────────────────────────────────────────────────
-        // TODO
         mod ord {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `Ord::cmp()` Tests ──────────────────────────────────────
+                // TODO
+                mod cmp {
+                    use super::*;
+
+                    // Signature:
+                    // fn cmp(&self, other: &Self) -> Ordering
+
+                }
+            }
         }
 
         // ── `PartialEq<&[U; N]>` Tests ──────────────────────────────────────
-        // TODO
         mod partial_eq_array_ref {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `PartialEq<&[U; N]>::eq()` Tests ────────────────────────
+                // TODO
+                mod eq {
+                    use super::*;
+
+                    // Signature:
+                    // fn eq(&self, other: &&[U; N]) -> bool
+
+                }
+            }
         }
 
         // ── `PartialEq<&[U]>` Tests ─────────────────────────────────────────
-        // TODO
         mod partial_eq_slice_ref {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `PartialEq<&[U]>::eq()` Tests ───────────────────────────
+                // TODO
+                mod eq {
+                    use super::*;
+
+                    // Signature:
+                    // fn eq(&self, other: &&[U]) -> bool
+
+                }
+            }
         }
 
         // ── `PartialEq<&mut [U]>` Tests ─────────────────────────────────────
-        // TODO
         mod partial_eq_slice_mut_ref {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `PartialEq<&mut [U]>::eq()` Tests ───────────────────────
+                // TODO
+                mod eq {
+                    use super::*;
+
+                    // Signature:
+                    // fn eq(&self, other: &&mut [U]) -> bool
+
+                }
+            }
         }
 
         // ── `PartialEq<ByteStr>` Tests ──────────────────────────────────────
-        // TODO
         mod partial_eq_byte_str {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `PartialEq<ByteStr>::eq()` Tests ────────────────────────
+                // TODO
+                mod eq {
+                    use super::*;
+
+                    // Signature:
+                    // fn eq(&self, other: &ByteStr) -> bool
+
+                }
+            }
         }
 
         // ── `PartialEq<ByteString>` Tests ───────────────────────────────────
-        // TODO
         mod partial_eq_byte_string {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `PartialEq<ByteString>::eq()` Tests ─────────────────────
+                // TODO
+                mod eq {
+                    use super::*;
+
+                    // Signature:
+                    // fn eq(&self, other: &ByteString) -> bool
+
+                }
+            }
         }
 
         // ── `PartialEq<Vec<U, A>>` Tests ────────────────────────────────────
-        // TODO
         mod partial_eq_vec {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `PartialEq<Vec<U, A>>::eq()` Tests ──────────────────────
+                // TODO
+                mod eq {
+                    use super::*;
+
+                    // Signature:
+                    // fn eq(&self, other: &Vec<U, A>) -> bool
+
+                }
+            }
         }
 
         // ── `PartialEq<Vec<u8>>` Tests ──────────────────────────────────────
-        // TODO
         mod partial_eq_vec_u8 {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `PartialEq<Vec<u8>>::eq()` Tests ────────────────────────
+                // TODO
+                mod eq {
+                    use super::*;
+
+                    // Signature:
+                    // fn eq(&self, other: &Vec<u8>) -> bool
+
+                }
+            }
         }
 
         // ── `PartialEq<[U; N]>` Tests ───────────────────────────────────────
-        // TODO
         mod partial_eq_array {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `PartialEq<[U; N]>::eq()` Tests ─────────────────────────
+                // TODO
+                mod eq {
+                    use super::*;
+
+                    // Signature:
+                    // fn eq(&self, other: &[U; N]) -> bool
+
+                }
+            }
         }
 
         // ── `PartialEq<[U]>` Tests ──────────────────────────────────────────
-        // TODO
         mod partial_eq_slice {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `PartialEq<[U]>::eq()` Tests ────────────────────────────
+                // TODO
+                mod eq {
+                    use super::*;
+
+                    // Signature:
+                    // fn eq(&self, other: &[U]) -> bool
+
+                }
+            }
         }
 
         // ── `PartialOrd<Vec<T, A2>>` Tests ──────────────────────────────────
-        // TODO
         mod partial_ord {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `PartialOrd<Vec<T, A2>>::partial_cmp()` Tests ───────────
+                // TODO
+                mod partial_cmp {
+                    use super::*;
+
+                    // Signature:
+                    // fn partial_cmp(
+                    //      &self, other: &Vec<T, A2>
+                    // ) -> Option<Ordering>
+
+                }
+            }
         }
 
         // ── `TryFrom<Vec<T, A>>` Tests ──────────────────────────────────────
-        // TODO
         mod try_from_vec_alloc {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `TryFrom<Vec<T, A>>::try_from()` Tests ──────────────────
+                // TODO
+                mod try_from {
+                    use super::*;
+
+                    // Signature:
+                    // fn try_from(vec: Vec<T, A>) -> Result<Self, Self::Error>
+
+                }
+            }
         }
 
         // ── `TryFrom<Vec<T>>` Tests ─────────────────────────────────────────
-        // TODO
         mod try_from_vec {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `TryFrom<Vec<T>>::try_from()` Tests ─────────────────────
+                // TODO
+                mod try_from {
+                    use super::*;
+
+                    // Signature:
+                    // fn try_from(vec: Vec<T>) -> Result<Self, Self::Error>
+
+                }
+            }
         }
 
         // ── `TryFrom<Vec<u8>>` Tests ────────────────────────────────────────
-        // TODO
         mod try_from_vec_u8 {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `TryFrom<Vec<u8>>::try_from()` Tests ────────────────────
+                // TODO
+                mod try_from {
+                    use super::*;
+
+                    // Signature:
+                    // fn try_from(vec: Vec<u8>) -> Result<Self, Self::Error>
+
+                }
+            }
         }
 
         // ── `Write` Tests ───────────────────────────────────────────────────
-        // TODO
         mod write {
             use super::*;
+
+            // ── Method Tests ────────────────────────────────────────────────
+            mod methods {
+                use super::*;
+
+                // ── `Write::write()` Tests ──────────────────────────────────
+                // TODO
+                mod write {
+                    use super::*;
+
+                    // Signature:
+                    // fn write(&mut self, buf: &[u8]) -> Result<usize>
+
+                }
+
+                // ── `Write::flush()` Tests ──────────────────────────────────
+                // TODO
+                mod flush {
+                    use super::*;
+
+                    // Signature:
+                    // fn flush(&mut self) -> Result<()>
+
+                }
+
+                // ── `Write::write_vectored()` Tests ─────────────────────────
+                // TODO
+                mod write_vectored {
+                    use super::*;
+
+                    // Signature:
+                    // fn write_vectored(
+                    //      &mut self, bufs: &[IoSlice<'_>]
+                    // ) -> Result<usize>
+
+                }
+
+                // ── `Write::write_all()` Tests ──────────────────────────────
+                // TODO
+                mod write_all {
+                    use super::*;
+
+                    // Signature:
+                    // fn write_all(&mut self, buf: &[u8]) -> Result<()>
+
+                }
+
+                // ── `Write::write_fmt()` Tests ──────────────────────────────
+                // TODO
+                mod write_fmt {
+                    use super::*;
+
+                    // Signature:
+                    // fn write_fmt(
+                    //      &mut self, fmt: Arguments<'_>
+                    // ) -> Result<()>
+
+                }
+            }
         }
     }
-
+   
     // ── Auto Trait Implementations ──────────────────────────────────────────
     mod auto_trait_implementations {
         use super::*;
