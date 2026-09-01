@@ -13,6 +13,7 @@ mod tests {
         use super::*;
 
         // ── `ExtractIf::allocator()` Tests ──────────────────────────────────
+        // TODO
         mod allocator {
             use super::*;
 
@@ -34,6 +35,7 @@ mod tests {
                 use super::*;
 
                 // ── `Debug::fmt()` Tests ────────────────────────────────────
+                // TODO
                 mod fmt {
                     use super::*;
 
@@ -55,6 +57,7 @@ mod tests {
                 use super::*;
 
                 // ── `Drop::drop()` Tests ────────────────────────────────────
+                // TODO
                 mod drop {
                     use super::*;
 
@@ -63,6 +66,7 @@ mod tests {
                 }
 
                 // ── `Drop::pin_drop()` Tests ────────────────────────────────
+                // TODO
                 mod pin_mod {
                     use super::*;
 
@@ -81,6 +85,7 @@ mod tests {
                 use super::*;
 
                 // ── `Iterator::next()` Tests ────────────────────────────────
+                // TODO
                 mod next {
                     use super::*;
 
@@ -89,6 +94,7 @@ mod tests {
                 }
 
                 // ── `Iterator::size_hint()` Tests ───────────────────────────
+                // TODO
                 mod size_hint {
                     use super::*;
 
@@ -97,6 +103,7 @@ mod tests {
                 }
 
                 // ── `Iterator::next_chunk()` Tests ──────────────────────────
+                // TODO
                 mod next_chunk {
                     use super::*;
 
@@ -108,6 +115,7 @@ mod tests {
                 }
 
                 // ── `Iterator::count()` Tests ───────────────────────────────
+                // TODO
                 mod count {
                     use super::*;
 
@@ -116,6 +124,7 @@ mod tests {
                 }
 
                 // ── `Iterator::last()` Tests ────────────────────────────────
+                // TODO
                 mod last {
                     use super::*;
 
@@ -124,6 +133,7 @@ mod tests {
                 }
 
                 // ── `Iterator::advance_by()` Tests ──────────────────────────
+                // TODO
                 mod advance_by {
                     use super::*;
 
@@ -136,6 +146,7 @@ mod tests {
                 }
 
                 // ── `Iterator::nth()` Tests ─────────────────────────────────
+                // TODO
                 mod nth {
                     use super::*;
 
@@ -145,6 +156,7 @@ mod tests {
                 }
 
                 // ── `Iterator::step_by()` Tests ──────────────────────────────
+                // TODO
                 mod step_by {
                     use super::*;
 
@@ -154,6 +166,7 @@ mod tests {
                 }
 
                 // ── `Iterator::chain()` Tests ───────────────────────────────
+                // TODO
                 mod chain {
                     use super::*;
 
@@ -163,6 +176,7 @@ mod tests {
                 }
 
                 // ── `Iterator::zip()` Tests ─────────────────────────────────
+                // TODO
                 mod zip {
                     use super::*;
 
@@ -172,6 +186,7 @@ mod tests {
                 }
 
                 // ── `Iterator::intersperse()` Tests ─────────────────────────
+                // TODO
                 mod intersperse {
                     use super::*;
 
@@ -184,6 +199,7 @@ mod tests {
                 }
 
                 // ── `Iterator::intersperse_with()` Tests ────────────────────
+                // TODO
                 mod intersperse_with {
                     use super::*;
 
@@ -196,6 +212,7 @@ mod tests {
                 }
 
                 // ── `Iterator::map()` Tests ─────────────────────────────────
+                // TODO
                 mod map {
                     use super::*;
 
@@ -205,6 +222,7 @@ mod tests {
                 }
 
                 // ── `Iterator::enumerate()` Tests ───────────────────────────
+                // TODO
                 mod enumerate {
                     use super::*;
 
@@ -214,6 +232,7 @@ mod tests {
                 }
 
                 // ── `Iterator::peekable()` Tests ────────────────────────────
+                // TODO
                 mod peekable {
                     use super::*;
 
@@ -223,6 +242,7 @@ mod tests {
                 }
 
                 // ── `Iterator::skip_while()` Tests ──────────────────────────
+                // TODO
                 mod skip_while {
                     use super::*;
 
@@ -235,6 +255,7 @@ mod tests {
                 }
 
                 // ── `Iterator::map_while()` Tests ───────────────────────────
+                // TODO
                 mod map_while {
                     use super::*;
 
@@ -247,6 +268,7 @@ mod tests {
                 }
 
                 // ── `Iterator::skip()` Tests ────────────────────────────────
+                // TODO
                 mod skip {
                     use super::*;
 
@@ -256,6 +278,7 @@ mod tests {
                 }
 
                 // ── `Iterator::take()` Tests ────────────────────────────────
+                // TODO
                 mod take {
                     use super::*;
 
@@ -265,6 +288,7 @@ mod tests {
                 }
 
                 // ── `Iterator::scan()` Tests ────────────────────────────────
+                // TODO
                 mod scan {
                     use super::*;
 
@@ -278,6 +302,7 @@ mod tests {
                 }
 
                 // ── `Iterator::flat_map()` Tests ────────────────────────────
+                // TODO
                 mod flat_map {
                     use super::*;
 
@@ -287,6 +312,7 @@ mod tests {
                 }
 
                 // ── `Iterator::flatten()` Tests ─────────────────────────────
+                // TODO
                 mod flatten {
                     use super::*;
 
@@ -296,6 +322,7 @@ mod tests {
                 }
 
                 // ── `Iterator::map_windows()` Tests ─────────────────────────
+                // TODO
                 mod map_windows {
                     use super::*;
 
@@ -308,6 +335,7 @@ mod tests {
                 }
 
                 // ── `Iterator::fuse()` Tests ────────────────────────────────
+                // TODO
                 mod fuse {
                     use super::*;
 
@@ -317,6 +345,7 @@ mod tests {
                 }
 
                 // ── `Iterator::inspect()` Tests ─────────────────────────────
+                // TODO
                 mod inspect {
                     use super::*;
 
@@ -326,6 +355,7 @@ mod tests {
                 }
 
                 // ── `Iterator::by_ref()` Tests ──────────────────────────────
+                // TODO
                 mod by_ref {
                     use super::*;
 
@@ -335,6 +365,7 @@ mod tests {
                 }
 
                 // ── `Iterator::collect()` Tests ─────────────────────────────
+                // TODO
                 mod collect {
                     use super::*;
 
@@ -344,6 +375,7 @@ mod tests {
                 }
 
                 // ── `Iterator::try_collect()` Tests ─────────────────────────
+                // TODO
                 mod try_collect {
                     use super::*;
 
@@ -355,6 +387,7 @@ mod tests {
                 }
 
                 // ── `Iterator::collect_into()` Tests ────────────────────────
+                // TODO
                 mod collect_into {
                     use super::*;
 
@@ -364,6 +397,7 @@ mod tests {
                 }
 
                 // ── `Iterator::partition()` Tests ───────────────────────────
+                // TODO
                 mod partition {
                     use super::*;
 
@@ -373,6 +407,7 @@ mod tests {
                 }
 
                 // ── `Iterator::partition_in_place()` Tests ──────────────────
+                // TODO
                 mod partition_in_place {
                     use super::*;
 
@@ -385,6 +420,7 @@ mod tests {
                 }
 
                 // ── `Iterator::is_partitioned()` Tests ──────────────────────
+                // TODO
                 mod is_partitioned {
                     use super::*;
 
@@ -394,6 +430,7 @@ mod tests {
                 }
 
                 // ── `Iterator::try_fold()` Tests ────────────────────────────
+                // TODO
                 mod try_fold {
                     use super::*;
 
@@ -403,6 +440,7 @@ mod tests {
                 }
 
                 // ── `Iterator::try_for_each()` Tests ────────────────────────
+                // TODO
                 mod try_for_each {
                     use super::*;
 
@@ -412,6 +450,7 @@ mod tests {
                 }
 
                 // ── `Iterator::fold()` Tests ────────────────────────────────
+                // TODO
                 mod fold {
                     use super::*;
 
@@ -421,6 +460,7 @@ mod tests {
                 }
 
                 // ── `Iterator::reduce()` Tests ──────────────────────────────
+                // TODO
                 mod reduce {
                     use super::*;
 
@@ -430,6 +470,7 @@ mod tests {
                 }
 
                 // ── `Iterator::try_reduce()` Tests ──────────────────────────
+                // TODO
                 mod try_reduce {
                     use super::*;
 
@@ -439,6 +480,7 @@ mod tests {
                 }
 
                 // ── `Iterator::all()` Tests ─────────────────────────────────
+                // TODO
                 mod all {
                     use super::*;
 
@@ -448,6 +490,7 @@ mod tests {
                 }
 
                 // ── `Iterator::any()` Tests ─────────────────────────────────
+                // TODO
                 mod any {
                     use super::*;
 
@@ -457,6 +500,7 @@ mod tests {
                 }
 
                 // ── `Iterator::find()` Tests ────────────────────────────────
+                // TODO
                 mod find {
                     use super::*;
 
@@ -469,6 +513,7 @@ mod tests {
                 }
 
                 // ── `Iterator::find_map()` Tests ────────────────────────────
+                // TODO
                 mod find_map {
                     use super::*;
 
@@ -478,6 +523,7 @@ mod tests {
                 }
 
                 // ── `Iterator::try_find()` Tests ────────────────────────────
+                // TODO
                 mod try_find {
                     use super::*;
 
@@ -490,6 +536,7 @@ mod tests {
                 }
 
                 // ── `Iterator::position()` Tests ────────────────────────────
+                // TODO
                 mod position {
                     use super::*;
 
@@ -499,6 +546,7 @@ mod tests {
                 }
 
                 // ── `Iterator::rposition()` Tests ───────────────────────────
+                // TODO
                 mod rposition {
                     use super::*;
 
@@ -511,6 +559,7 @@ mod tests {
                 }
 
                 // ── `Iterator::max()` Tests ─────────────────────────────────
+                // TODO
                 mod max {
                     use super::*;
 
@@ -520,6 +569,7 @@ mod tests {
                 }
 
                 // ── `Iterator::min()` Tests ─────────────────────────────────
+                // TODO
                 mod min {
                     use super::*;
 
@@ -529,6 +579,7 @@ mod tests {
                 }
 
                 // ── `Iterator::max_by_key()` Tests ──────────────────────────
+                // TODO
                 mod max_by_key {
                     use super::*;
 
@@ -538,6 +589,7 @@ mod tests {
                 }
 
                 // ── `Iterator::max_by()` Tests ──────────────────────────────
+                // TODO
                 mod max_by {
                     use super::*;
 
@@ -547,6 +599,7 @@ mod tests {
                 }
 
                 // ── `Iterator::min_by_key()` Tests ──────────────────────────
+                // TODO
                 mod min_by_key {
                     use super::*;
 
@@ -556,6 +609,7 @@ mod tests {
                 }
 
                 // ── `Iterator::min_by()` Tests ──────────────────────────────
+                // TODO
                 mod min_by {
                     use super::*;
 
@@ -565,6 +619,7 @@ mod tests {
                 }
 
                 // ── `Iterator::rev()` Tests ─────────────────────────────────
+                // TODO
                 mod rev {
                     use super::*;
 
@@ -574,6 +629,7 @@ mod tests {
                 }
 
                 // ── `Iterator::unzip()` Tests ───────────────────────────────
+                // TODO
                 mod unzip {
                     use super::*;
 
@@ -583,6 +639,7 @@ mod tests {
                 }
 
                 // ── `Iterator::copied()` Tests ──────────────────────────────
+                // TODO
                 mod copied {
                     use super::*;
 
@@ -592,6 +649,7 @@ mod tests {
                 }
 
                 // ── `Iterator::cloned()` Tests ──────────────────────────────
+                // TODO
                 mod cloned {
                     use super::*;
 
@@ -601,6 +659,7 @@ mod tests {
                 }
 
                 // ── `Iterator::cycle()` Tests ───────────────────────────────
+                // TODO
                 mod cycle {
                     use super::*;
 
@@ -610,6 +669,7 @@ mod tests {
                 }
 
                 // ── `Iterator::array_chunks()` Tests ────────────────────────
+                // TODO
                 mod array_chunks {
                     use super::*;
 
@@ -621,6 +681,7 @@ mod tests {
                 }
 
                 // ── `Iterator::sum()` Tests ─────────────────────────────────
+                // TODO
                 mod sum {
                     use super::*;
 
@@ -630,6 +691,7 @@ mod tests {
                 }
 
                 // ── `Iterator::product()` Tests ─────────────────────────────
+                // TODO
                 mod product {
                     use super::*;
 
@@ -639,6 +701,7 @@ mod tests {
                 }
 
                 // ── `Iterator::cmp()` Tests ─────────────────────────────────
+                // TODO
                 mod cmp {
                     use super::*;
 
@@ -648,6 +711,7 @@ mod tests {
                 }
 
                 // ── `Iterator::cmp_by()` Tests ──────────────────────────────
+                // TODO
                 mod cmp_by {
                     use super::*;
 
@@ -657,6 +721,7 @@ mod tests {
                 }
 
                 // ── `Iterator::partial_cmp()` Tests ─────────────────────────
+                // TODO
                 mod partial_cmp {
                     use super::*;
 
@@ -666,6 +731,7 @@ mod tests {
                 }
 
                 // ── `Iterator::partial_cmp_by()` Tests ──────────────────────
+                // TODO
                 mod partial_cmp_by {
                     use super::*;
 
@@ -679,6 +745,7 @@ mod tests {
                 }
 
                 // ── `Iterator::eq()` Tests ──────────────────────────────────
+                // TODO
                 mod eq {
                     use super::*;
 
@@ -688,6 +755,7 @@ mod tests {
                 }
 
                 // ── `Iterator::eq_by()` Tests ───────────────────────────────
+                // TODO
                 mod eq_by {
                     use super::*;
 
@@ -697,6 +765,7 @@ mod tests {
                 }
 
                 // ── `Iterator::ne()` Tests ──────────────────────────────────
+                // TODO
                 mod ne {
                     use super::*;
 
@@ -706,6 +775,7 @@ mod tests {
                 }
 
                 // ── `Iterator::lt()` Tests ──────────────────────────────────
+                // TODO
                 mod lt {
                     use super::*;
 
@@ -715,6 +785,7 @@ mod tests {
                 }
 
                 // ── `Iterator::le()` Tests ──────────────────────────────────
+                // TODO
                 mod le {
                     use super::*;
 
@@ -724,6 +795,7 @@ mod tests {
                 }
 
                 // ── `Iterator::gt()` Tests ──────────────────────────────────
+                // TODO
                 mod gt {
                     use super::*;
 
@@ -733,6 +805,7 @@ mod tests {
                 }
 
                 // ── `Iterator::ge()` Tests ──────────────────────────────────
+                // TODO
                 mod ge {
                     use super::*;
 
@@ -742,6 +815,7 @@ mod tests {
                 }
 
                 // ── `Iterator::is_sorted()` Tests ───────────────────────────
+                // TODO
                 mod is_sorted {
                     use super::*;
 
@@ -751,6 +825,7 @@ mod tests {
                 }
 
                 // ── `Iterator::is_sorted_by()` Tests ────────────────────────
+                // TODO
                 mod is_sorted_by {
                     use super::*;
 
@@ -760,6 +835,7 @@ mod tests {
                 }
 
                 // ── `Iterator::is_sorted_by_key()` Tests ────────────────────
+                // TODO
                 mod is_sorted_by_key {
                     use super::*;
 
@@ -824,6 +900,7 @@ mod tests {
                 use super::*;
 
                 // ── `Any::type_id()` Tests ──────────────────────────────────
+                // TODO
                 mod type_id {
                     use super::*;
 
@@ -843,6 +920,7 @@ mod tests {
                 use super::*;
 
                 // ── `Borrow::borrow()` Tests ────────────────────────────────
+                // TODO
                 mod borrow {
                     use super::*;
 
@@ -861,6 +939,7 @@ mod tests {
                 use super::*;
 
                 // ── `BorrowMut::borrow_mut()` Tests ─────────────────────────
+                // TODO
                 mod borrow_mut {
                     use super::*;
 
@@ -879,6 +958,7 @@ mod tests {
                 use super::*;
 
                 // ── `From::from()` Tests ────────────────────────────────────
+                // TODO
                 mod from {
                     use super::*;
 
@@ -898,6 +978,7 @@ mod tests {
                 use super::*;
 
                 // ── `Into::into()` Tests ────────────────────────────────────
+                // TODO
                 mod into {
                     use super::*;
 
@@ -916,6 +997,7 @@ mod tests {
                 use super::*;
 
                 // ── `IntoIterator::into_iter()` Tests ───────────────────────
+                // TODO
                 mod into_iter {
                     use super::*;
 
@@ -934,6 +1016,7 @@ mod tests {
                 use super::*;
 
                 // ── `TryFrom::try_from()` Tests ─────────────────────────────
+                // TODO
                 mod try_from {
                     use super::*;
 
@@ -952,6 +1035,7 @@ mod tests {
                 use super::*;
 
                 // ── `TryInto::try_into()` Tests ─────────────────────────────
+                // TODO
                 mod try_into {
                     use super::*;
 
